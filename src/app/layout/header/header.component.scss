@@ -1,0 +1,47 @@
+// Desktop nav link with a red underline that grows from the centre.
+// Compact by default so eight items fit at 1280px; roomier on very wide screens.
+.nav-link {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  padding: 0.5rem 0.4rem;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset-inline: 0.4rem;
+    bottom: 0.2rem;
+    height: 2px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #f24a50, #e11b22);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  &:hover::after,
+  &.is-active::after {
+    transform: scaleX(1);
+  }
+
+  @media (min-width: 1440px) {
+    padding-inline: 0.55rem;
+    font-size: 0.9rem;
+
+    &::after {
+      inset-inline: 0.55rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &::after {
+      transition: none;
+    }
+  }
+}

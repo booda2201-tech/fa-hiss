@@ -1,0 +1,57 @@
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    // Keeps in-page anchors from hiding under the fixed header.
+    scroll-padding-top: 5.5rem;
+    -webkit-text-size-adjust: 100%;
+
+    // Everything is rem-based, so the root size tunes the whole site's density.
+    // It glides with the viewport instead of jumping, so every laptop (1024 → 1920+)
+    // gets the same visual proportions:
+    //   768px → 14px · 1280–1599px → 15px · 1920px → ~16.1px
+    @media (min-width: 768px) {
+      font-size: 14px;
+    }
+    @media (min-width: 1024px) {
+      font-size: calc(14px + (100vw - 1024px) * 0.0039);
+    }
+    @media (min-width: 1280px) {
+      font-size: 15px;
+    }
+    @media (min-width: 1600px) {
+      font-size: calc(15px + (100vw - 1600px) * 0.0034);
+    }
+    @media (min-width: 2200px) {
+      font-size: 17px;
+    }
+  }
+
+  body {
+    @apply font-sans;
+    text-rendering: optimizeLegibility;
+  }
+
+  // Arabic reads better with a touch more line height.
+  html[lang='ar'] body {
+    line-height: 1.75;
+  }
+
+  // Letter-spacing disconnects Arabic letters – never allow it in RTL.
+  html[dir='rtl'] * {
+    letter-spacing: normal !important;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent-400 ring-offset-2 ring-offset-transparent;
+  }
+
+  ::selection {
+    @apply bg-accent-100 text-ink;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}

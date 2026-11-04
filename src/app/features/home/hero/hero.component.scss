@@ -1,0 +1,62 @@
+// Subtle blueprint-style grid, faded towards the edges.
+.hero-grid {
+  background-image:
+    linear-gradient(rgb(255 255 255 / 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(255 255 255 / 0.05) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse at 30% 40%, #000 20%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse at 30% 40%, #000 20%, transparent 75%);
+}
+
+// The site-wide root font-size is trimmed on desktop (see _base.scss); the hero keeps its original
+// 16px-based scale (14.5px root -> 16px, 15.5px root -> 16px).
+@media (min-width: 768px) {
+  .hero-content {
+    zoom: calc(16 / 14.5);
+  }
+}
+
+@media (min-width: 1600px) {
+  .hero-content {
+    zoom: calc(16 / 15.5);
+  }
+}
+
+// Accent-coloured words must not be clipped by the per-word mask.
+.hero-mask {
+  padding-block: 0.12em;
+  margin-block: -0.12em;
+}
+
+.hero-dot > span:first-child {
+  animation: hero-ping 1.8s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.hero-bounce {
+  animation: hero-bounce 1.8s ease-in-out infinite;
+}
+
+@keyframes hero-ping {
+  75%,
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+@keyframes hero-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-dot > span:first-child,
+  .hero-bounce {
+    animation: none;
+  }
+}

@@ -1,0 +1,9 @@
+// Global entry point.
+// `@use` rules must come first; Tailwind layers are merged afterwards by PostCSS.
+@use 'styles/aos';
+@use 'styles/base';
+@use 'styles/components';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

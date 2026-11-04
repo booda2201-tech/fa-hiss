@@ -1,0 +1,37 @@
+// RTL-aware custom AOS animations (AOS base CSS is registered in angular.json).
+
+// `fade-start` / `fade-end` follow the reading direction, unlike AOS'
+// built-in `fade-left` / `fade-right`, which are physical.
+[data-aos='fade-start'] {
+  transform: translate3d(-40px, 0, 0);
+
+  &.aos-animate {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+[data-aos='fade-end'] {
+  transform: translate3d(40px, 0, 0);
+
+  &.aos-animate {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+[dir='rtl'] {
+  [data-aos='fade-start'] {
+    transform: translate3d(40px, 0, 0);
+
+    &.aos-animate {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  [data-aos='fade-end'] {
+    transform: translate3d(-40px, 0, 0);
+
+    &.aos-animate {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}

@@ -1,0 +1,46 @@
+// Reusable, design-system level component classes.
+
+@layer components {
+  // Glassmorphism – use on top of a dark / image background.
+  .glass {
+    background: rgb(255 255 255 / 0.08);
+    -webkit-backdrop-filter: blur(16px) saturate(150%);
+    backdrop-filter: blur(16px) saturate(150%);
+    border: 1px solid rgb(255 255 255 / 0.16);
+  }
+
+  // Glassmorphism for light surfaces (e.g. the scrolled header).
+  .glass-light {
+    background: rgb(255 255 255 / 0.88);
+    -webkit-backdrop-filter: blur(18px) saturate(180%);
+    backdrop-filter: blur(18px) saturate(180%);
+    border: 1px solid rgb(255 255 255 / 0.6);
+  }
+
+  .section-container {
+    @apply container;
+  }
+
+  // Buttons ---------------------------------------------------------------
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3
+      text-sm font-semibold transition duration-300 ease-out-expo
+      focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
+  }
+
+  .btn-accent {
+    @apply btn bg-accent-gradient text-white shadow-soft hover:-translate-y-0.5 hover:shadow-glow;
+  }
+
+  .btn-brand {
+    @apply btn bg-brand-600 text-white shadow-soft hover:-translate-y-0.5 hover:bg-brand-700;
+  }
+
+  .btn-light {
+    @apply btn bg-white text-brand-700 shadow-soft hover:-translate-y-0.5 hover:bg-surface;
+  }
+
+  .btn-glass {
+    @apply btn glass text-white hover:bg-white/20 hover:-translate-y-0.5;
+  }
+}

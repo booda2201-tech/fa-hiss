@@ -1,0 +1,804 @@
+{
+  "brand": {
+    "name": "High Institute for Specific Studies",
+    "location": "Heliopolis"
+  },
+  "a11y": {
+    "skipToContent": "Skip to main content",
+    "mainNav": "Main navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "openSearch": "Open search",
+    "closeSearch": "Close search",
+    "switchLanguage": "Switch language",
+    "previous": "Previous",
+    "next": "Next",
+    "playVideo": "Play video",
+    "newWindow": "(opens in a new window)",
+    "breadcrumb": "Breadcrumb"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "admission": "Admission",
+    "departments": "Departments",
+    "services": "Services",
+    "news": "News",
+    "contact": "Contact",
+    "academics": "Academics",
+    "faculty": "Faculty",
+    "newsMedia": "News & Media",
+    "quality": "Quality Assurance",
+    "advising": "Academic Advising"
+  },
+  "header": {
+    "studentPortal": "Student Portal",
+    "allDepartments": "View all departments",
+    "search": "Search",
+    "searchPlaceholder": "Search programs, news, services…"
+  },
+  "hero": {
+    "badge": "Since 1975 — fifty years of academic excellence",
+    "titleLead": "High Institute",
+    "titleAccent": "for Specific Studies, Heliopolis",
+    "subtitle": "Four-year bachelor's programs in Tourism Studies, Hospitality Management, Tour Guiding and Business Information Systems, combining high-quality education with hands-on training.",
+    "ctaDepartments": "Explore Departments",
+    "ctaApply": "Apply to the Institute",
+    "scroll": "Discover more"
+  },
+  "about": {
+    "eyebrow": "About the Institute",
+    "title": "Who We Are",
+    "text": "The Higher Institute for Specialized Studies in Heliopolis is considered one of Egypt’s long-established and prestigious educational institutions. Founded in 1975, it has built a strong reputation as a leading institute in its specialized fields. The institute offers comprehensive four-year academic programs through which students earn a bachelor’s degree in one of the following majors: Tourism Studies and Hotel & Hospitality Management, Tour Guiding, Business Information Systems, and Management Information Systems. The institute is known for its high standards of education and practical training, enabling graduates to develop the skills needed to meet the evolving demands of the job market across various industries.",
+    "readMore": "Read More",
+    "since": "Since",
+    "vision": {
+      "title": "Institute Vision",
+      "text": "To be a leading institute in delivering high-quality education and innovative scientific research that contributes to the advancement of society and the labor market, while promoting a culture of innovation and entrepreneurship to support sustainable development at both local and regional levels."
+    },
+    "mission": {
+      "title": "Institute Mission",
+      "text": "To graduate highly qualified professionals capable of contributing to the development of local and regional labor markets across the institute’s various specializations, through a supportive environment for education, learning, and scientific research. The institute also aims to promote ethical values, foster innovation and entrepreneurship, and encourage active community engagement in pursuit of sustainable development."
+    },
+    "stats": {
+      "graduates": "Alumni",
+      "labs": "Laboratories",
+      "years": "Years of history"
+    }
+  },
+  "departments": {
+    "eyebrow": "Discover",
+    "title": "Academic Majors",
+    "discover": "Explore the department",
+    "guiding": "Tour Guiding Department",
+    "tourism": "Tourism Studies Department",
+    "hospitality": "Hospitality Management Department",
+    "bis": "Business Information Systems Department"
+  },
+  "dept": {
+    "guiding": {
+      "short": "The Tour Guiding Program aims to prepare graduates with the essential knowledge and practical skills required for a professional career in tourism guidance. It helps students develop strong communication abilities, cultural awareness, leadership, and time-management skills. The program also trains them to apply a scientific approach in handling crises and emergency situations, while ensuring they have a solid understanding of the laws and regulations governing the tourism sector.",
+      "intro": [
+        "The Tour Guiding Program aims to prepare graduates with the essential knowledge and practical skills required for a professional career in tourism guidance. It helps students develop strong communication abilities, cultural awareness, leadership, and time-management skills. The program also trains them to apply a scientific approach in handling crises and emergency situations, while ensuring they have a solid understanding of the laws and regulations governing the tourism sector."
+      ],
+      "mission": "The institute is committed to preparing a tour guide equipped with knowledge, skills, professional ethics and the ability to learn independently, keeping pace with developments in the profession and contributing to sustainable tourism development — enabling them to lead the tour guiding profession locally and regionally and to support Egypt's tourism revival.",
+      "facilities": [
+        "A model museum displaying replicas of Egyptian artifacts from various historical periods: 71 Ancient Egyptian pieces, 7 Greco-Roman, 9 Coptic and 12 from the Islamic era."
+      ],
+      "admission": [
+        "General Secondary Certificate (all streams) or equivalent Arab and international certificates.",
+        "Passing the specialized first foreign language, the specialized second foreign language and the course \"Ancient Egyptian History and Heritage\".",
+        "Admission to Tour Guiding is limited to holders of the General Secondary Certificate.",
+        "Passing the Tour Guiding aptitude and skills exam (foreign languages, knowledge, appearance and overall personality), supervised by the Higher Tourism & Antiquities Institutes Sector Committee of the Ministry of Higher Education together with tourism industry professionals. It is held before the start of Level 2, after Level 1 results are announced.",
+        "Admission is limited to the students with the highest scores."
+      ],
+      "downloads": {
+        "fieldGuide": "Field Visits Guide",
+        "fieldGuideDoc": "Field Visits Guide – Tour Guiding Department",
+        "selfLearning": "Self-Learning Guide – Tour Guiding Department"
+      }
+    },
+    "tourism": {
+      "short": "The Tourism Studies Department is one of the institute’s core academic divisions, striving to achieve leadership in tourism education through both high-quality teaching and impactful scientific research. The department aims to keep pace with the continuous and rapid developments within the tourism industry, while aligning its programs with the evolving demands of local, national, and global labor markets.",
+      "intro": [
+        "The Tourism Studies Department is one of the institute’s core academic divisions, striving to achieve leadership in tourism education through both high-quality teaching and impactful scientific research. The department aims to keep pace with the continuous and rapid developments within the tourism industry, addressing both theoretical foundations and real-world practices, while aligning its programs with the evolving demands of local, national, and global labor markets. It also adheres to quality assurance standards in performance and ongoing evaluation. Through its faculty members, the department continuously works to enhance teaching capabilities through training and active research, ensuring that curricula and courses are regularly updated to reflect the fast-changing economic landscape shaping today’s world.",
+        "The department equips students with advanced knowledge and skills to connect graduates with the needs of the labor market and the tourism sector in general. It organizes field trips through the institute's Training Unit to support the theoretical side and sharpen students' practical experience.",
+        "Practical training is continuous and multi-staged: it starts with group research assignments that build teamwork and IT skills, followed by a graduation project in the fourth year to design a complete tourism project, along with ongoing training in professional customer service, tour programme design to the latest international standards, and efficient use of global airline reservation systems such as Amadeus."
+      ],
+      "degree": "The department applies the credit-hour system and awards a bachelor's degree in Tourism Studies. Postgraduate admission for the department's students is expected to open soon, God willing.",
+      "careers": [
+        "Various departments in travel agencies, tourism companies and airlines.",
+        "Public relations and customer service roles.",
+        "Tourist transport companies and their departments.",
+        "Advertising and promotion in its various sectors.",
+        "Marketing companies and exhibition management."
+      ],
+      "facilities": [
+        "A fully simulated travel office for training on airline ticket reservation.",
+        "Computer labs with the Amadeus airline reservation system, connected to the internet."
+      ],
+      "admission": [
+        "General Secondary Certificate (all streams) or equivalent Arab and international certificates.",
+        "Commercial Secondary School diploma (3 or 5 years).",
+        "Technical Secondary School for Administration and Services (3 years).",
+        "Tourism and Hotels Secondary School diploma (5 years), admitted to the second year.",
+        "Technical Hotel Institute, Technical Commercial Institute and EGOTH Hotel Institute diplomas.",
+        "Transfers from equivalent institutes may be accepted into the second or third year."
+      ]
+    },
+    "hospitality": {
+      "short": "The Hospitality Management Department aims to professionally and academically prepare qualified graduates for careers in the hotel and hospitality industry, enabling them to successfully integrate into both local and regional job markets. Students develop a diverse set of skills through learning, analyzing, and applying key concepts related to the hospitality sector.",
+      "intro": [
+        "The Hospitality Management Department aims to professionally and academically prepare qualified graduates for careers in the hotel and hospitality industry, enabling them to successfully integrate into both local and regional job markets. Students develop a diverse set of skills through learning, analyzing, and applying key concepts related to the hospitality sector, along with gaining a solid understanding of the fundamental principles that govern hotel operations at both local and regional levels, and the laws and regulations governing the hospitality industry in Egypt.",
+        "Graduates also acquire professional skills for the various hotel departments such as food & beverage, rooms division, hotel marketing and the different administrative departments."
+      ],
+      "degree": "The department awards a bachelor's degree in Tourism and Hotels, with Hospitality Management as the main major and Hotel Management as the sub-major. The degree is equivalent to the bachelor's degree in Tourism and Hotels granted by Egyptian universities subject to University Organization Law No. 49 of 1972, according to Minister of Higher Education Decree No. 185 dated 3/7/2017.",
+      "careers": [
+        "Food & beverage, rooms division and hotel marketing.",
+        "The various administrative departments of hotels.",
+        "Social clubs and university residences.",
+        "Petroleum and mining companies.",
+        "Restaurants and hospitals.",
+        "Air, sea and land transport companies."
+      ],
+      "facilities": [
+        "Hotel kitchen and training restaurant.",
+        "Front-desk model.",
+        "Computer lab for hotel reservations using the Opera system.",
+        "A fully equipped model hotel room.",
+        "An equipped laundry."
+      ],
+      "admission": [
+        "General Secondary Certificate (all streams) or equivalent Arab and international certificates.",
+        "EGOTH Hotel Institute diploma and Technical Hotel Institute diplomas.",
+        "Marine hospitality diploma (3 or 5 years) and Hotel Secondary School diploma (3 years).",
+        "Commercial Secondary School diploma (3 or 5 years).",
+        "Agriculture and restaurants diplomas.",
+        "Technical diplomas (tourism and hotels), five-year system."
+      ],
+      "protocolsIntro": "The department has signed cooperation protocols with many hotels and restaurants to provide training and employment opportunities for its students and graduates, including:",
+      "protocols": [
+        "InterContinental Hotels",
+        "JW Marriott",
+        "Le Passage",
+        "Burger King",
+        "Buzoka Fried Chicken",
+        "Dushka Burger",
+        "Stella Café",
+        "Garnell Sushi",
+        "Alamar Food Group",
+        "Domino's Pizza",
+        "Dunkin' Donuts",
+        "Buffalo",
+        "Burger Republic",
+        "Integrated Service",
+        "ETHX for Consulting and Human Resources"
+      ],
+      "training": "Summer training is a mandatory graduation requirement for the department, in an establishment offering hospitality services (hotels, restaurants, tourist villages) for four weeks in the summer after the fourth semester (Level 2), and another four weeks after the sixth semester (Level 3).",
+      "fieldTrips": "The department sets an annual field-visit plan: hotels, restaurants, tourist villages, airports, ports, hotel equipment exhibitions, armed forces and police clubs, sports clubs, specialized exhibitions and festivals, conference centers, floating hotels and more."
+    },
+    "bis": {
+      "short": "The program focuses on studying and analyzing digital data using advanced computing technologies, with a strong emphasis on efficient data management and processing. It supports a wide range of fields, including communication enhancement, records management, decision-making support, data analytics, cloud computing, the Internet of Things (IoT), e-commerce, as well as data and network security.",
+      "intro": [
+        "The program focuses on studying and analyzing digital data using advanced computing technologies, with a strong emphasis on efficient data management and processing. It supports a wide range of fields, including communication enhancement, records management, decision-making support, data analytics, cloud computing, the Internet of Things (IoT), e-commerce, as well as data and network security, while providing hands-on exposure to modern technologies. In addition, the program equips students with practical skills to improve system performance, manage resources efficiently, resolve bottlenecks, and predict system behavior under peak workloads.",
+        "The Business Information Systems Department combines management and information sciences to improve business performance through modern technology. It focuses on how information systems can be used to analyze, improve and effectively execute business strategies."
+      ],
+      "facilities": [
+        "An accredited Microsoft Training Center that provides internationally recognized IT certifications.",
+        "A partnership agreement with Oracle Academy, specializing in database technologies.",
+        "Computer labs with the latest hardware and software, networked and connected to high-speed internet."
+      ],
+      "admission": [
+        "General Secondary Certificate (Science and Arts) or equivalent Arab and international certificates.",
+        "Industrial and Commercial Secondary School (three-year and five-year systems).",
+        "Technical Commercial and Industrial Institute diplomas, and Administration & Secretarial institute diplomas.",
+        "Al-Azhar Secondary Certificate (Industrial track) and Don Bosco school graduates.",
+        "Computer diploma holders (Management Information Systems) with an overall \"Pass\" grade, and Technical Commercial Institute graduates (finance and management information systems tracks), are admitted to the second year.",
+        "Computer diploma holders (Management Information Systems) with a \"Good\" grade are admitted to the third year."
+      ],
+      "downloads": {
+        "studyPlan": "Student Advisory Study Plan"
+      }
+    }
+  },
+  "deptPage": {
+    "overview": "About the Department",
+    "mission": "Program Mission",
+    "degree": "Degree Awarded",
+    "careers": "Career Opportunities",
+    "facilities": "Facilities & Equipment",
+    "admission": "Department Admission Requirements",
+    "protocols": "Training & Employment Partnerships",
+    "training": "Summer Training",
+    "fieldTrips": "Field Visits",
+    "downloads": "Downloads",
+    "system": "Study System",
+    "systemItems": [
+      "The credit-hour system is applied: students must successfully pass a number of courses to graduate.",
+      "A bachelor's degree takes eight semesters, with a minimum of 3 years of study.",
+      "Students can shape their study plan according to their abilities, guided by an academic advisor.",
+      "Attendance of lectures and practical sessions is mandatory.",
+      "Level 1 is general for all majors (Tourism Studies, Hospitality Management and Tour Guiding)."
+    ],
+    "documents": "Required Documents",
+    "apply": "Apply Now",
+    "otherDepartments": "Other Departments",
+    "backHome": "Home"
+  },
+  "leaders": {
+    "eyebrow": "Institute Leadership",
+    "title": "Words from Our Leadership",
+    "dean": {
+      "name": "Prof. Dr. Ghada Abdullah",
+      "role": "Dean of the Higher Institute for Specialized Studies",
+      "message": "The world is witnessing unprecedented development in the fields of computer science, information technology, and artificial intelligence, as well as in the sectors of tourism, hospitality, and tour guiding. These technologies have become central to many areas of business such as education, healthcare, industry, agriculture, economics, accounting, tourism management, and hospitality management. This is due…"
+    },
+    "chairman": {
+      "name": "Prof. Dr. Sameh Habib",
+      "role": "Chairman of the Institute’s Board of Directors",
+      "message": "My dear students, respected faculty members, and honorable guests, I am pleased to welcome you all to our institute, which continuously strives to achieve excellence and leadership in the fields of tourism studies, hospitality management, tour guiding, and information systems."
+    }
+  },
+  "services": {
+    "eyebrow": "Everything a student needs",
+    "title": "Student Services",
+    "subtitle": "Quick links to the institute's key academic and student services.",
+    "groups": {
+      "academic": "Academic Affairs",
+      "life": "Student Life",
+      "institute": "Institute & Training"
+    },
+    "schedules": "Lecture Schedules",
+    "exams": "Exam Schedules",
+    "results": "Student Results",
+    "training": "Training Center",
+    "trainingText": "A Microsoft center equipped with the latest devices and technologies, offering IT training courses with leading global companies (Microsoft – Oracle) for all students and graduates.",
+    "expatriates": "International Students Services",
+    "activities": "Student Activities",
+    "health": "Health Care",
+    "employment": "Employment Forum",
+    "graduation": "Graduation Ceremonies",
+    "military": "Military Education",
+    "youth": "Youth Care",
+    "advising": "Academic Advising",
+    "library": "Library",
+    "quality": "Quality Assurance Unit",
+    "faculty": "Faculty Directory",
+    "seminars": "Seminars & Conferences",
+    "journals": "Scientific Journals",
+    "publicRelations": "Public Relations",
+    "allTitle": "All student services",
+    "desc": {
+      "schedules": "Browse the lecture timetables for every year and program.",
+      "results": "Check your results as soon as they are published.",
+      "training": "IT courses at a Microsoft-equipped training center.",
+      "employment": "Career opportunities and training with leading employers."
+    },
+    "open": "Open"
+  },
+  "ekb": {
+    "title": "Egyptian Knowledge Bank",
+    "text": "The Egyptian Knowledge Bank provides faculty members and students with access to reliable academic resources and references to support education and research.",
+    "cta": "Register Now"
+  },
+  "video": {
+    "eyebrow": "Watch",
+    "title": "Get to Know the Institute",
+    "play": "Play video"
+  },
+  "news": {
+    "eyebrow": "Stay informed",
+    "title": "Latest News",
+    "n1": "The First Scientific Conference of the Business Information Systems Department under the patronage of Dr. Sameh Fouad Habib, Chairman of the Institute’s Board of Directors, and supervised by Prof. Dr. Ghada Abdullah Mohamed, Dean of the Institute.",
+    "n2": "Fouad Habib Award Competition 2025",
+    "n3": "Under the patronage of the Dean of the Institute, Prof. Dr. Ghada Abdullah, a workshop entitled “First Aid – Saving a Life” will, God willing, be held and delivered by Dr. Khaled Bin Al-Waleed, Lecturer in the Department of Hospitality Management, on Sunday, April 27, 2025.",
+    "n4": "Prof. Dr. Ghada Abdullah, Dean of the Higher Institute for Specialized Studies, along with the Vice Dean, the Director of the Quality Assurance Unit, the Heads of the Scientific Departments, and faculty members, inaugurated the Employment Forum at the Institute, with the participation of a large number of companies across various specializations.",
+    "alt": "News from the institute",
+    "view": "View announcement"
+  },
+  "gallery": {
+    "title": "Moments from Our Events",
+    "alt": "Photo from an institute event"
+  },
+  "partners": {
+    "eyebrow": "Proudly working with",
+    "title": "Our Partners",
+    "aaru": "Association of Arab Universities",
+    "certiport": "Certiport",
+    "erasmus": "Erasmus+",
+    "huawei": "Huawei",
+    "microsoft": "Microsoft Office",
+    "sgs": "SGS",
+    "stFatima": "St. Fatima Group",
+    "widener": "Widener University",
+    "philadelphia": "Philadelphia University",
+    "commerce": "Faculty of Commerce"
+  },
+  "pages": {
+    "portal": {
+      "title": "Student Portal",
+      "intro": "Your gateway to the university information system and the institute's academic services.",
+      "loginTitle": "Sign in to UMIS",
+      "loginText": "Sign in with your username and password on the University Management Information System to view your academic records and student services.",
+      "loginCta": "Go to the system",
+      "loginNote": "The system opens in a new window on the institute's official site (sis.fa-hiss.edu.eg).",
+      "helpTitle": "Having trouble signing in?",
+      "helpText": "If you forgot your password or can't sign in, contact the support team and we'll help.",
+      "quickTitle": "Quick links for students"
+    },
+    "about": {
+      "title": "About the Institute",
+      "intro": "The Higher Institute for Specialized Studies in Heliopolis — one of Egypt's long-established educational institutions since 1975.",
+      "historyTitle": "Historical Overview",
+      "history": [
+        {
+          "year": "1975",
+          "text": "The institute was established as a branch of the Institute of Management."
+        },
+        {
+          "year": "1985",
+          "text": "In October 1985 a ministerial approval granted it independence, and it became the Institute of Management and Computer Science in Heliopolis."
+        },
+        {
+          "year": "1990",
+          "text": "Ministerial Decree No. 248 (March 1990) established a Hotel Studies division within the institute."
+        },
+        {
+          "year": "1992",
+          "text": "Ministerial Decree No. 1273 (24/9/1992) restructured the Computer Science division into a four-year program in two stages: two years leading to the Institute Diploma, then two years leading to a bachelor's degree in Computer Science. Decree No. 1531 restructured the Tourism and Hotels division into a continuous four-year program following the academic model of the Faculty of Tourism and Hotels at Helwan University."
+        },
+        {
+          "year": "1994",
+          "text": "The institute was renamed the Institute of Specialized Studies in Heliopolis by Decree No. 857 (25/7/1994)."
+        },
+        {
+          "year": "2001",
+          "text": "Decree No. 265 (February 2001) replaced the two-stage structure of the Computer Science division with a continuous four-year program. Decree No. 1535 (3/11/2001) upgraded the name to the Higher Institute for Specialized Studies in Heliopolis, offering four-year bachelor's programs under the supervision of the Ministry of Higher Education. In December 2001, Decree No. 1705 approved a unified curriculum for Management Information Systems to facilitate equivalency with the Business Administration (MIS) bachelor's degree, effective from 2001/2002."
+        },
+        {
+          "year": "2017",
+          "text": "Ministerial Decree No. 996 (28/2/2017) introduced a unified updated regulation for tourism and hospitality institutes, effective from the 2017/2018 academic year."
+        },
+        {
+          "year": "2021",
+          "text": "Ministerial Decree No. 6576 (2/11/2021) approved the credit-hour system curriculum and academic content for the Business Information Systems program, effective from the 2021/2022 academic year."
+        }
+      ],
+      "orgChart": "Organizational Structure of the Institute (PDF)",
+      "featuresTitle": "Distinctive Features of the Institute",
+      "features": [
+        "All academic degrees awarded by the institute are accredited by the Supreme Council of Universities and approved by the Minister of Higher Education, allowing graduates to pursue postgraduate studies at equivalent colleges.",
+        "The institute is an active member of the Association of Arab Universities.",
+        "A distinguished selection of highly qualified faculty members and teaching assistants across various academic specializations.",
+        "Classrooms and lecture halls are spacious, air-conditioned, and equipped with modern educational technologies such as overhead projectors and data-show systems.",
+        "Computer laboratories feature the latest hardware, are fully networked, and equipped with advanced software and interactive tools, all connected to high-speed internet.",
+        "The Hospitality Management Department includes a fully equipped training restaurant and teaching kitchen, plus computer labs with specialized hotel reservation systems such as Opera.",
+        "The Tourism Studies Department offers a fully simulated travel agency environment for airline ticketing training, supported by reservation software such as Amadeus.",
+        "The Tour Guiding Department features a model museum displaying replicas of Egyptian artifacts from the Ancient Egyptian, Greco-Roman, Coptic, and Islamic eras.",
+        "An accredited Microsoft Training Center providing internationally recognized IT certifications.",
+        "A partnership agreement with Oracle Academy, specializing in database technologies.",
+        "Flexible payment options for tuition fees to accommodate students’ personal circumstances.",
+        "Merit-based scholarships: first place — full tuition exemption; second place — 50%; third place — 25%.",
+        "An annual career fair connecting graduates with suitable employment opportunities."
+      ],
+      "equivalencyTitle": "Equivalency of Certificates",
+      "equivalency": "All bachelor’s degrees awarded by the institute across its various academic programs are officially recognized as equivalent to the corresponding bachelor’s degrees granted by Egyptian universities in related fields."
+    },
+    "admission": {
+      "title": "Institute Admission",
+      "intro": "Admission requirements and regulations for the departments, and the documents needed to enroll.",
+      "rulesTitle": "Admission Requirements & Regulations",
+      "bisTitle": "First: Information Systems Division",
+      "bis": [
+        "General Secondary Certificate (both Science and Arts streams), or equivalent Arab and international certificates.",
+        "Industrial Secondary School (three-year and five-year systems).",
+        "Commercial Secondary School (three-year and five-year systems).",
+        "Technical Commercial Institute Diploma.",
+        "Technical Industrial Institute Diploma.",
+        "Al-Azhar Secondary Certificate (Industrial track), Industrial Apprenticeship graduates, and graduates of Don Bosco schools.",
+        "Graduates of Technical Commercial Institutes specializing in Business Information Systems may be admitted directly into the second year, provided they have obtained at least a “Good” grade, complete the required course equivalency, and receive approval from the Commercial Sector Committee."
+      ],
+      "tourismTitle": "Second: Tourism & Hospitality Division",
+      "tourism": [
+        "General Secondary Certificate (both Science and Arts streams), or equivalent Arab and international certificates.",
+        "Commercial Secondary School (three-year and five-year systems).",
+        "Technical Secondary School for Administration and Services (three-year system).",
+        "Tourism and Hotels Secondary School Diploma (five-year system), with eligibility for direct admission to the second year.",
+        "Technical Hotel Institute Diplomas.",
+        "Technical Commercial Institute Diplomas.",
+        "Hotel Institute Diplomas (EGOTH).",
+        "Transfers from equivalent institutes may be accepted into the second or third year, subject to academic regulations."
+      ],
+      "guidingTitle": "Tour Guiding Division",
+      "guiding": [
+        "General Secondary Certificate (both Science and Arts streams), or equivalent Arab and international certificates."
+      ],
+      "foreignTitle": "Third: Holders of Arab and International Certificates",
+      "foreign": "Students holding Arab or international certificates are admitted through the official electronic coordination system.",
+      "documentsTitle": "Documents & Required Papers",
+      "documents": [
+        "Completed application form (available from the institute’s administration).",
+        "A copy of the national ID card, or a passport for non-Egyptian students.",
+        "Military Form 2 (fully stamped) — for male students only.",
+        "Original birth certificate.",
+        "Original academic qualification certificate.",
+        "Six recent passport-size photographs (4×6 cm).",
+        "Military Form 6 (fully stamped) — for male students only.",
+        "Approval from the International Students Affairs Department (for international students only).",
+        "A medical report (internal medicine and eye examination), officially stamped, required for applicants to the Tourism & Hospitality Division."
+      ],
+      "ctaTitle": "Questions about admission?",
+      "ctaText": "The institute team is ready to answer your questions."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "intro": "We are glad to receive your inquiries and suggestions through the channels below.",
+      "phones": "Telephone",
+      "mobiles": "Mobile",
+      "whatsapp": "WhatsApp & Viber",
+      "emailTitle": "Email",
+      "support": "Support",
+      "help": "Complaints & suggestions",
+      "jobsMail": "Careers",
+      "jobsTitle": "Looking for a job opportunity?",
+      "jobsText": "We always welcome distinguished professionals and academics. Send your CV, the field in the subject line and details of your experience directly to the email below, and our HR team will contact you if there are opportunities matching your qualifications.",
+      "complaintsTitle": "Together we improve our institute",
+      "complaintsText": "We believe you are partners in our success and that your suggestions are our main drive towards excellence. Whether you have an idea to improve a facility or a complaint about a service, we are happy to listen. We promise to review your requests and solve problems as quickly as possible to ensure an ideal learning environment.",
+      "social": "Follow us on"
+    }
+  },
+  "footer": {
+    "about": "The Higher Institute for Specialized Studies in Heliopolis, founded in 1975, awards bachelor's degrees in Tourism Studies, Hospitality Management, Tour Guiding and Business Information Systems.",
+    "social": "Social media",
+    "explore": "Explore",
+    "departments": "Departments",
+    "links": "Important Links",
+    "careers": "Careers",
+    "complaints": "Complaints & Suggestions",
+    "contact": "Contact Us",
+    "address": "Heliopolis, Cairo, Egypt",
+    "rights": "© {{year}} High Institute for Specific Studies. All rights reserved."
+  },
+  "newsletter": {
+    "title": "Stay in the loop",
+    "description": "News, events and admission updates, straight to your inbox.",
+    "label": "Email address",
+    "placeholder": "Your email address",
+    "button": "Subscribe",
+    "invalid": "Please enter a valid email address.",
+    "success": "Thank you! You are now subscribed."
+  },
+  "info": {
+    "photosTitle": "Photo gallery",
+    "download": "Download",
+    "open": "Open",
+    "relatedTitle": "In this section",
+    "backHome": "Back to home",
+    "groups": {
+      "services": "Student Services",
+      "faculty": "Faculty",
+      "media": "News & Media",
+      "quality": "Quality"
+    },
+    "sidebarPortalTitle": "Student Portal",
+    "sidebarPortalText": "Sign in to follow your timetable, results and course registration.",
+    "schedules": {
+      "intro": "Lecture timetables for first-year students (general division), academic year 2024 – 2025.",
+      "filesTitle": "Timetable files",
+      "files": [
+        "Summer lecture timetable – general division 2024 – 2025",
+        "Second-term timetable 2024 – 2025 – first year, general"
+      ]
+    },
+    "exams": {
+      "intro": "First-term exam timetables for first-year students (general division), 2025.",
+      "filesTitle": "Exam timetables",
+      "files": [
+        "First year (general – term system) 2025 – first-term exam timetable",
+        "First year (general – credit-hours system) 2025 – first-term exam timetable"
+      ]
+    },
+    "results": {
+      "intro": "Student results – Tourism & Hotels (credit-hours system).",
+      "filesTitle": "Published results",
+      "files": [
+        "Second year – Tour Guiding",
+        "Second year – Tourism & Hospitality",
+        "First year results – General"
+      ],
+      "ctaTitle": "Your individual result in the Student Portal",
+      "ctaText": "Follow your grades and the details of every course after signing in to the Student Portal."
+    },
+    "training": {
+      "intro": "A Microsoft center equipped with the latest devices and technologies offers IT training courses with leading global companies (Microsoft – Oracle) for all students and graduates.",
+      "listTitle": "What the center offers",
+      "items": [
+        "A Microsoft center equipped with the latest devices and technologies.",
+        "IT training courses with leading global companies (Microsoft – Oracle).",
+        "Open to all students and graduates of the institute."
+      ]
+    },
+    "expatriates": {
+      "intro": "Registration guidelines for Egyptian and international students.",
+      "egyptiansTitle": "Registration for Egyptian students",
+      "egyptians": "Holders of this year's General Secondary Certificate and technical diplomas are admitted online through the Coordination Office website.",
+      "egyptiansLinks": [
+        "Coordination Office website – tansik.egypt.gov.eg"
+      ],
+      "foreignTitle": "Registration for international students",
+      "foreign": "Applications are submitted online through the website of the Cultural Affairs and Missions Sector of the Ministry – the “Study in Egypt” platform.",
+      "foreignLinks": [
+        "“Study in Egypt” platform – study-in-egypt.gov.eg"
+      ],
+      "officeTitle": "Completing the procedures",
+      "office": "All admission procedures are completed through the Expatriates Office of the Ministry of Higher Education, located at 7 Dr. Ibrahim Abu El-Naga St., Embassies District, Nasr City."
+    },
+    "activities": {
+      "intro": "The institute's administration cares about student activities and student families of all kinds. The Student Union works under the supervision of Youth Care as a link between students and management. For many years the institute has ranked among the top universities' unions nationwide, and the union and student families are notably active and honorably represented among student families and unions across the country."
+    },
+    "health": {
+      "intro": "The institute provides its students with the best standards of medical care and treatment through the institute's doctors and nursing staff, with a clinic equipped with medical equipment.",
+      "listTitle": "What students get",
+      "items": [
+        "The institute's doctors.",
+        "A nursing team.",
+        "A clinic equipped with medical equipment."
+      ]
+    },
+    "employment": {
+      "intro": "Every year the Alumni Association holds the Employment Forum, attended by many hotel management, tourism and information-systems companies, in a serious effort to provide suitable job opportunities for graduates and to prepare a generation grounded in applied methodologies and armed with both knowledge and skill. The forum is covered by specialized TV channels."
+    },
+    "graduation": {
+      "intro": "Moments from the 2018 graduation ceremony."
+    },
+    "military": {
+      "intro": "Military Education is a core subject for Egyptian male students. It should not be confused with military service in the armed forces: it is a university course taken during the years of study and a basic requirement for obtaining the graduation certificate – without it the student's result is not approved by the Ministry of Higher Education and the Supreme Council of Universities.",
+      "topicsTitle": "Course content",
+      "topics": [
+        "Physical fitness training.",
+        "Lectures delivered by officers on national security and national awareness.",
+        "Military history and war security.",
+        "Topography and military traditions."
+      ],
+      "notice": "Nominations",
+      "noticeText": "Fourth- and third-year male students and second- and first-year female students listed in the following rosters have been nominated:",
+      "listsTitle": "Course rosters",
+      "lists": [
+        "Course 51 roster – males",
+        "Course 6 roster – females"
+      ]
+    },
+    "advising": {
+      "intro": "Helping students choose the right specialization according to their abilities, academic interests and labor-market needs.",
+      "goalsTitle": "The role of academic advising",
+      "goals": [
+        "Helping students choose the right specialization according to their abilities, academic interests and labor-market needs.",
+        "Preparing a file for each student, explaining the institute's regulations and systems, and informing them of their rights, duties and graduation requirements.",
+        "Guiding students in choosing suitable courses according to the academic plan to achieve the best learning outcomes."
+      ],
+      "onlineTitle": "Online course registration",
+      "online": "Information Systems students and second-level students of the Tourism, Hospitality and Tour Guiding divisions can register their courses directly online, any time and from anywhere, then pay at the institute's official hours. Steps:",
+      "steps": [
+        "Open the portal link: sis.fa-hiss.edu.eg",
+        "Sign in with your credentials.",
+        "Choose your courses.",
+        "Save the registration.",
+        "Wait for the fees to load, then print the sheet and take it straight to the cashier to pay."
+      ],
+      "ctaTitle": "Start registering your courses",
+      "ctaText": "Open the student information system (UMIS) to register your courses.",
+      "ctaButton": "Open registration system"
+    },
+    "faculty": {
+      "intro": "Faculty members and teaching staff of the Higher Institute for Specialized Studies, Heliopolis.",
+      "names": [
+        "Dr. Nader Samir",
+        "Prof. Amal El-Sayed Ahmed El-Barry",
+        "Assoc. Prof. Mariam William Bassoum Attallah",
+        "Dr. Khaled Ben El-Walid",
+        "Assoc. Prof. Ahmed El-Sayed Abu El-Nasr Sobeih",
+        "Dr. Abla Ismail",
+        "Dr. Abdel-Rahim Amer",
+        "Dr. Naglaa Saeed Shehata",
+        "Dr. Asmaa Kamal El-Sayed",
+        "Dr. Mohamed El-Sayed Hassan",
+        "Assoc. Prof. Helen Abdel-Hamid",
+        "Dr. Meryl Ibrahim",
+        "Dr. Nermine Zaki Mikhail",
+        "Dr. Heba Ibrahim",
+        "Dr. Mona Farid Mostafa",
+        "Dr. Islam Mohamed Saeed",
+        "Dr. Hind Sultan Ibrahim",
+        "Dr. Asmaa Ibrahim",
+        "Faten Qotb Mohamed",
+        "Islam Mamdouh Mohamed Aly",
+        "Marina Salah Shenouda",
+        "Shaimaa Aly Mohamed Abd Rabbo",
+        "Aly Abdallah Mohamed",
+        "Wael Haidar Aly",
+        "Michael Nayer Sobhy",
+        "Ibrahim Sayed El-Araby",
+        "Hebatallah Samir Ahmed",
+        "Sherry Boshra Tamer"
+      ],
+      "roles": [
+        "Basic Sciences Dept. – Business Information Systems",
+        "Professor & Head of Tourism Studies Dept.",
+        "Associate Professor of Economics",
+        "Lecturer, Hospitality Management",
+        "Associate Professor of Hotel Management",
+        "Lecturer, English Language",
+        "Lecturer, English Language",
+        "Lecturer, Information Systems",
+        "Lecturer, Computer Science – Information Systems Dept.",
+        "Lecturer, Information Systems",
+        "Associate Professor of Tourism Studies",
+        "Lecturer, Tourism Studies",
+        "Lecturer, French Language",
+        "Lecturer, Italian Language",
+        "Lecturer, Tour Guiding",
+        "Lecturer, Tour Guiding",
+        "Lecturer, Management Information Systems",
+        "Lecturer, Tourism Studies",
+        "Teaching Assistant, Hotel Management",
+        "Assistant Lecturer, Hotel Management",
+        "Assistant Lecturer, Tourism Studies",
+        "Teaching Assistant, Accounting",
+        "Assistant Lecturer, Accounting",
+        "Lecturer, Information Systems",
+        "Lecturer, Information Systems",
+        "Lecturer, Information Systems",
+        "Lecturer, Information Systems",
+        "Assistant Lecturer, Information Systems"
+      ]
+    },
+    "seminars": {
+      "intro": "The departments' scientific conferences and the institute's cultural-season seminars.",
+      "conferencesTitle": "Scientific conferences",
+      "conferenceTitles": [
+        "Information Systems Department Conference",
+        "Tourism Studies Department Conference",
+        "Hospitality Department Conference",
+        "Tour Guiding Department Conference",
+        "Basic Sciences Department Conference"
+      ],
+      "conferenceTexts": [
+        "The department's scientific conference was held under the patronage of Prof. Sameh Fouad Habib, Chairman of the Board, and the supervision of Prof. Ghada Abdullah Mohamed, Dean. Dr. Mohamed Wagdy, Advisor to the Minister of Justice for Technology and Information, delivered a highly valuable lecture, alongside lectures by Dr. Ibrahim El-Araby and Asst. Lecturer Bassant Aly, and presentations of outstanding student projects in information systems and their modern applications, with a large turnout of department students. Thanks to Department Head Dr. Youssef Ramzy and the faculty and teaching staff.",
+        "A member of the General Assembly of the Chamber of Tourism Companies gave a lecture titled “Tourism awareness and its role in building a positive image and tourist satisfaction”, followed by Asst. Lecturer Marina Salah on “The impact of chatbot technology on the tourism sector”, with a large turnout of department students. Thanks to Department Head Prof. Amal El-Barry and the faculty and teaching staff for the organization and outstanding attendance.",
+        "The Hospitality Management Department's scientific conference was held under the patronage of Prof. Sameh Fouad Habib and the supervision of Prof. Ghada Abdullah Mohamed. Dr. Ansi Helmy, Executive Chef at Le Passage Cairo Hotel, lectured on “Success factors in food and beverage management”, alongside Asst. Lecturer Islam Mamdouh on “Adopting green human-resources practices in the Egyptian hotel industry” and Eng. Faten Qotb on “Scientific research methods in the social sciences”. Thanks to Department Head Assoc. Prof. Ahmed Abu El-Nasr.",
+        "The first scientific conference of the Tour Guiding Department, honored by the eminent archaeologist Dr. Mostafa El-Waziry, who lectured on “The latest archaeological discoveries in Egypt”, which impressed all attendees. Thanks to Prof. Shorouk Ashour, Vice Dean and Head of the Department, and the faculty and teaching staff.",
+        "The first scientific conference of the Basic Sciences Department, where Prof. Ayman El-Zohairy, professor at the American University, population expert and member of the National Council for Human Rights, lectured on “Migration and human rights – human mobility in the age of artificial intelligence”, alongside a lecture by Mr. Aly Abdallah Mohamed. Thanks to Dr. Mariam William and the faculty and teaching staff."
+      ],
+      "seasonTitle": "Cultural-season seminars 2024",
+      "seminarTitles": [
+        "First seminar – “Conspiracies in Ancient Egypt”",
+        "Second seminar – “Linguistic Camouflage and Revealing the Horizons of Civilizations”",
+        "Third seminar – “Investment – The Non-Crisis”"
+      ],
+      "seminarTexts": [
+        "5 November 2024 – delivered by Dr. Islam Mohamed, lecturer in the Tour Guiding Department, under the patronage of Dr. Sameh Fouad Habib, Chairman of the Board, and Prof. Shorouk Ashour, Acting Dean.",
+        "14 November 2024 – delivered by Dr. Heba Ibrahim, Italian-language lecturer, at the start of the institute's cultural season and amid strong student turnout.",
+        "26 November 2024 – delivered by Dr. Helen Abdel-Hamid, lecturer in the Tourism Studies Department, as part of the institute's cultural season."
+      ]
+    },
+    "journals": {
+      "intro": "The International Journal of Tourism and Hospitality Sciences, published by the Higher Institute for Specialized Studies, Heliopolis, and indexed in the Egyptian Knowledge Bank and the Supreme Council of Universities databases.",
+      "linksTitle": "For researchers",
+      "links": [
+        "Journal website and manuscript submission",
+        "Authors' guide",
+        "Registration and upload stages",
+        "Peer-review process stages"
+      ],
+      "noteTitle": "Important notes",
+      "note": "Manuscripts are received through the journal's website only, which is dedicated to Arabic-language research. Contact: ijths@fa-hiss.edu.eg. We promise researchers a review, editing and publishing service worthy of their trust. – Editorial board of the International Journal of Tourism and Hospitality Sciences."
+    },
+    "publicRelations": {
+      "intro": "Under the patronage of H.E. President Abdel Fattah El-Sisi, the Higher Institute for Specialized Studies, Heliopolis, took part in the most important event in its history – September 2023, the Day of Excellence of Egyptian Universities and Institutes – where the honoring ceremony featured the procession of top graduates, shining under the flags of Egyptian universities and institutes, before the President at the Suez Canal Authority Stadium."
+    },
+    "youth": {
+      "intro": "The institute's administration cares about student activities and student families of all kinds. The Student Union works under the supervision of Youth Care as a link between students and management. For many years the institute has ranked among the top universities' unions nationwide, and the union and student families are notably active and honorably represented among student families and unions across the country.",
+      "reportsTitle": "Activity reports",
+      "reports": [
+        "Illustrated report 2024 – 2025",
+        "Written report"
+      ]
+    },
+    "library": {
+      "intro": "The library is equipped with a diverse collection of the latest references serving the different departments, offers scientific trips and visits for students, and holds the latest works by faculty members. It provides students with every service they need, from borrowing books to photocopying, and has computers connected directly to the Internet.",
+      "visionTitle": "Vision",
+      "vision": "For the library to support the institute's missions and help it achieve its goals and develop and spread knowledge – the essential and vital partner of the academic institution – by providing varied, up-to-date information sources in all forms for the academic community, and advanced information services directly tied to teaching, research and the needs of the knowledge society.",
+      "goalsTitle": "Goals",
+      "goals": [
+        "Keeping pace with technological change and using automated catalogs in search.",
+        "Providing high-quality information and technical services that save researchers and readers time and effort.",
+        "Raising cultural, scientific and social awareness and achieving user satisfaction.",
+        "Meeting students' needs for all information media, cultural and academic.",
+        "Supporting students' research skills and helping them produce good research.",
+        "Organizing scientific references and information sources to make retrieval easy.",
+        "Working under the regulations that govern the institute's libraries.",
+        "Applying precautionary and preventive measures during crises when needed."
+      ],
+      "printingTitle": "Photocopying & printing",
+      "printingIntro": "The library offers photocopying and printing to all students, under the following rules:",
+      "printing": [
+        "Printing and photocopying are handled by the library specialist inside the library hall.",
+        "A fee is paid per page; printing is black and white only.",
+        "Only scientific material available in the library may be copied – no handouts or other papers.",
+        "Copying from printed material is allowed in accordance with the Intellectual Property Protection Law."
+      ],
+      "computerTitle": "Computer service",
+      "computer": "Computers are available in both libraries, where students can read research online or search the automated system for books, practice with software, or explore the Egyptian Knowledge Bank and more.",
+      "askTitle": "Ask the librarian",
+      "ask": "A new library service that answers inquiries by email: library@fa-hiss.edu.eg"
+    },
+    "quality": {
+      "visionTitle": "Unit vision",
+      "vision": "Excellence in higher-education quality, achieving competitiveness and institutional performance in line with quality requirements.",
+      "missionTitle": "Unit mission",
+      "missionIntro": "The Quality Assurance Unit is committed to:",
+      "mission": [
+        "Spreading and deepening a quality culture among faculty members, their assistants, staff and beneficiaries.",
+        "Qualifying the institute according to quality-standards requirements.",
+        "Gaining society's trust in the institute's graduates and achieving local competitiveness.",
+        "Strengthening community engagement and environmental service through research and service activities."
+      ],
+      "goalsTitle": "Strategic goals of the unit",
+      "goalsIntro": "Preparing the institute for accreditation and ensuring and developing the quality of education through the following:",
+      "goals": [
+        "Spreading the quality culture.",
+        "Building comprehensive databases for the institute in both the educational and institutional fields.",
+        "Setting and implementing a performance-measurement system (programs, courses, academic and administrative performance, community engagement, graduate skills, intended learning outcomes, research, educational and student activities, effectiveness of quality management).",
+        "Setting and implementing a performance-evaluation, review and corrective-action system.",
+        "Preparing and delivering training programs to ensure continuous development.",
+        "Elevating the institute's institutional and academic performance through improvement and enhancement programs.",
+        "Promoting the values of excellence and competitiveness among faculty, their assistants and staff."
+      ],
+      "establishedTitle": "Establishment",
+      "established": "The Quality Assurance Unit was established by a decision of the Board of the Higher Institute for Specialized Studies, Heliopolis, dated 27/11/2008.",
+      "boardTitle": "Unit board",
+      "board": [
+        "Prof. Ghada Abdullah Mohamed – Dean of the institute (Chair)",
+        "Dr. Hind Sultan Ibrahim Saeed – Director of the Quality Assurance Unit",
+        "Dr. Khaled Ben El-Walid Hassan – Deputy Director of the Quality Assurance Unit",
+        "Head of the Student Union – Member"
+      ],
+      "docsTitle": "Supporting documents",
+      "docs": [
+        "Internal regulations of the institute's Quality Assurance Unit",
+        "Programmatic accreditation – revised 2022 edition",
+        "Institutional accreditation – revised 2015 edition",
+        "The institute's strategic aims and goals",
+        "Spreading the quality culture (presentation)",
+        "Student quality guide",
+        "Student systems guide",
+        "Student guide – Tourism & Hospitality",
+        "Rules governing student assessment and exams",
+        "Code of ethics",
+        "Academic and administrative leadership selection document",
+        "The institute's self-study report"
+      ],
+      "workshopsTitle": "Workshops",
+      "workshops": [
+        "Workshop reviewing the academic standards.",
+        "Workshop on artificial intelligence in international publishing.",
+        "Academic advising workshop – 30 January 2025.",
+        "Course specification workshop for the Tourism Studies and Hospitality Management departments.",
+        "Workshop on the pillars of the Egyptian economy amid current challenges.",
+        "Programmatic standards workshop.",
+        "Workshop on digitization and artificial intelligence in international publishing."
+      ],
+      "coursesTitle": "Training courses",
+      "courses": [
+        "Courses to develop the capabilities of faculty members and teaching staff.",
+        "Computer skills (Word + Excel) course for administrative staff during the 2024 – 2025 mid-year break.",
+        "First-aid course.",
+        "Human-development course with Al-Kindi Center.",
+        "Intensive course on using interactive screens.",
+        "Crisis management.",
+        "Training course on self-study."
+      ],
+      "photosTitle": "Event photos"
+    }
+  }
+}
