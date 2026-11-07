@@ -69,8 +69,8 @@ export class LanguageService {
     const saved = this.readStorage();
     if (saved && this.isSupported(saved)) return saved;
 
-    const browser = this.document.defaultView?.navigator?.language?.slice(0, 2).toLowerCase();
-    return browser && this.isSupported(browser) ? browser : DEFAULT_LANG;
+    // Arabic is always the default for first-time visitors, whatever the browser language is.
+    return DEFAULT_LANG;
   }
 
   private find(code: LangCode): LanguageOption {

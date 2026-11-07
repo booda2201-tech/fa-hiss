@@ -52,7 +52,10 @@ const iconFor = (path: string): IconName => SERVICES.find((s) => s.path === path
       [attr.inert]="sheet() ? null : ''"
       [attr.aria-label]="sheetTitleKey() | translate"
     >
-      <div class="hide-scrollbar max-h-[68svh] overflow-y-auto overscroll-contain rounded-[2rem] bg-white p-5 shadow-luxe ring-1 ring-black/5">
+      <div
+        class="hide-scrollbar max-h-[68svh] overflow-y-auto overscroll-contain rounded-[2rem] bg-white p-5 shadow-luxe ring-1 ring-black/5"
+        [style.overflow-y]="sheet() === 'departments' ? 'hidden' : null"
+      >
         <div class="mx-auto mb-4 h-1.5 w-10 rounded-full bg-black/10" aria-hidden="true"></div>
         <div class="mb-4 flex items-center justify-between gap-3">
           <h2 class="text-xl font-extrabold text-brand-900">{{ sheetTitleKey() | translate }}</h2>
@@ -73,7 +76,7 @@ const iconFor = (path: string): IconName => SERVICES.find((s) => s.path === path
                 <li>
                   <a
                     [routerLink]="['/departments', dept.slug]"
-                    class="group relative flex aspect-[4/5] flex-col justify-end overflow-hidden rounded-3xl bg-brand-900 p-3.5 text-white shadow-soft active:scale-[0.97]"
+                    class="group relative flex h-[min(12.5rem,calc((68svh-8rem)/2))] w-full flex-col justify-end overflow-hidden rounded-3xl bg-brand-900 p-3.5 text-white shadow-soft active:scale-[0.97]"
                   >
                     <img decoding="async" [src]="dept.image" alt="" class="absolute inset-0 h-full w-full object-cover opacity-80" loading="lazy" />
                     <span class="absolute inset-0 bg-gradient-to-t from-brand-950/95 via-brand-950/35 to-transparent" aria-hidden="true"></span>
@@ -189,7 +192,7 @@ const iconFor = (path: string): IconName => SERVICES.find((s) => s.path === path
 
     <!-- Dock -->
     <nav
-      class="fixed inset-x-3 z-[57] grid grid-cols-5 items-end rounded-[1.75rem] bg-brand-950/95 px-1.5 pb-1.5 pt-2 text-white shadow-[0_18px_40px_-12px_rgb(0_30_15/0.65)] ring-1 ring-white/10 backdrop-blur-xl"
+      class="fixed inset-x-3 z-[57] grid grid-cols-5 items-end rounded-[1.75rem] bg-brand-950/95 px-1.5 py-1.5 text-white shadow-[0_18px_40px_-12px_rgb(0_30_15/0.65)] ring-1 ring-white/10 backdrop-blur-xl"
       style="bottom: max(0.75rem, env(safe-area-inset-bottom))"
       [attr.aria-label]="'dock.label' | translate"
     >
@@ -252,14 +255,18 @@ const iconFor = (path: string): IconName => SERVICES.find((s) => s.path === path
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 0.2rem;
+      gap: 0.3rem;
       border-radius: 1.1rem;
-      padding: 0.45rem 0 0.4rem;
+      padding: 0.52rem 0 0.58rem;
       font-size: 0.68rem;
       font-weight: 700;
       color: rgb(255 255 255 / 0.62);
       transition: color 0.25s, background-color 0.25s, transform 0.2s;
       -webkit-tap-highlight-color: transparent;
+    }
+    .dock-item > span {
+      /* Tight, fixed line box so Arabic glyphs sit centred and top/bottom padding look equal. */
+      line-height: 1.2;
     }
     .dock-item:active {
       transform: scale(0.92);
@@ -271,7 +278,14 @@ const iconFor = (path: string): IconName => SERVICES.find((s) => s.path === path
     .dock-fab {
       display: flex;
       flex-direction: column;
+      justify-content: flex-end;
       align-items: center;
+      /* Same box height as a regular dock item: the raised button overflows upwards, so it must not
+         make the bar taller than the pills (that was the extra space above them). */
+      height: 3.566rem;
+    }
+    .dock-fab > * {
+      flex-shrink: 0;
       -webkit-tap-highlight-color: transparent;
     }
   `,

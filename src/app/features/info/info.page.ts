@@ -188,13 +188,13 @@ const GROUP_HEADERS: Record<string, string> = {
                 }
 
                 @case ('people') {
-                  <ul class="grid grid-cols-1 gap-5 min-[480px]:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+                  <ul class="grid grid-cols-2 gap-3 sm:gap-5 md:grid-cols-3 xl:grid-cols-4">
                     @for (name of block.namesKey | translateList; track $index; let i = $index) {
                       <li
                         class="group relative flex flex-col items-center overflow-hidden rounded-3xl bg-white text-center shadow-card ring-1 ring-black/5 transition duration-300 hover:-translate-y-1 hover:shadow-soft-lg"
                         data-aos="fade-up"
                       >
-                        <div class="relative h-24 w-full bg-brand-gradient">
+                        <div class="relative h-12 w-full bg-brand-gradient sm:h-24">
                           <span class="absolute -end-6 -top-8 h-24 w-24 rounded-full bg-white/10"></span>
                           <span class="absolute -start-4 bottom-0 h-12 w-12 rounded-full bg-accent-600/30"></span>
                         </div>
@@ -202,12 +202,12 @@ const GROUP_HEADERS: Record<string, string> = {
                           [src]="block.photos[i]"
                           alt=""
                           loading="lazy"
-                          class="relative -mt-[3.75rem] h-[7.5rem] w-[7.5rem] rounded-full bg-white object-cover object-top shadow-soft ring-4 ring-white"
+                          class="relative -mt-10 h-[5.25rem] w-[5.25rem] sm:-mt-[3.75rem] sm:h-[7.5rem] sm:w-[7.5rem] rounded-full bg-white object-cover object-top shadow-soft ring-4 ring-white"
                         />
-                        <div class="flex w-full flex-1 flex-col items-center px-4 pb-5 pt-3">
-                          <h3 class="text-[0.95rem] font-extrabold leading-snug text-brand-900">{{ name }}</h3>
-                          <span class="mt-2 h-0.5 w-8 rounded-full bg-accent-600 transition-all duration-300 group-hover:w-14"></span>
-                          <p class="mt-2.5 text-[0.82rem] leading-relaxed text-ink-muted">{{ (block.rolesKey | translateList)[i] }}</p>
+                        <div class="flex w-full flex-1 flex-col items-center px-3 pb-3 pt-1.5 sm:px-4 sm:pb-5 sm:pt-3">
+                          <h3 class="flex min-h-[2.2rem] items-center text-[0.85rem] font-extrabold leading-snug text-brand-900 sm:min-h-0 sm:text-[0.95rem]">{{ name }}</h3>
+                          <span class="mt-1.5 h-0.5 w-8 rounded-full bg-accent-600 transition-all duration-300 group-hover:w-14"></span>
+                          <p class="mt-1.5 line-clamp-2 text-[0.75rem] leading-snug text-ink-muted sm:line-clamp-none sm:mt-2.5 sm:text-[0.82rem]">{{ (block.rolesKey | translateList)[i] }}</p>
                         </div>
                       </li>
                     }

@@ -13,5 +13,5 @@ export const SUPPORTED_LANGUAGES: readonly LanguageOption[] = [
   { code: 'ar', nativeLabel: 'العربية', dir: 'rtl' },
 ];
 
-export const DEFAULT_LANG: LangCode = 'en';
+export const DEFAULT_LANG: LangCode = 'ar';
 export const LANG_STORAGE_KEY = 'hiss.lang';
