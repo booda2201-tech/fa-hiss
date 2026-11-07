@@ -28,7 +28,7 @@ import { IconComponent } from '../icon/icon.component';
         [attr.aria-label]="'a11y.playVideo' | translate"
         (click)="playing.set(true)"
       >
-        <img
+        <img decoding="async"
           [src]="thumbnail()"
           alt=""
           class="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"

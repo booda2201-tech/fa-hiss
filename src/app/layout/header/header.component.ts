@@ -42,6 +42,7 @@ const ACTIVE_MATCH: IsActiveMatchOptions = {
     class: 'fixed inset-x-0 top-0 z-50 block transition-transform duration-500 ease-out-expo',
     '[class.-translate-y-full]': 'hidden()',
     '(keydown.escape)': 'closeAll()',
+    '(document:click)': 'onDocumentClick($event)',
   },
 })
 export class HeaderComponent {
@@ -66,9 +67,13 @@ export class HeaderComponent {
   protected readonly menuOpen = signal(false);
   protected readonly searchOpen = signal(false);
 
+  /** Label key of the desktop dropdown that is open (only one at a time). */
+  protected readonly openMenu = signal<string | null>(null);
+  private closeTimer: ReturnType<typeof setTimeout> | undefined;
+
   /** Solid white bar once scrolled, on non-hero pages, or while the mobile menu is open. */
   protected readonly solid = computed(
-    () => this.scroll.isScrolled() || !this.transparentOnTop() || this.menuOpen(),
+    () => this.scroll.isScrolled() || !this.transparentOnTop() || this.menuOpen() || this.searchOpen(),
   );
 
   protected readonly tone = computed<HeaderTone>(() => (this.solid() ? 'light' : 'dark'));
@@ -87,7 +92,9 @@ export class HeaderComponent {
 
   /** Frosted white with a hairline + soft drop shadow when solid; a dark fade for legibility when floating over the banner. */
   protected readonly barSurface = computed(() =>
-    this.solid()
+    this.searchOpen()
+      ? 'bg-white/95 shadow-[0_1px_0_rgb(15_23_42/0.06)] backdrop-blur-xl'
+      : this.solid()
       ? 'bg-white/95 shadow-[0_1px_0_rgb(15_23_42/0.06),0_12px_32px_-20px_rgb(15_23_42/0.45)] backdrop-blur-xl'
       : 'bg-gradient-to-b from-black/55 via-black/25 to-black/0 backdrop-blur-[3px]',
   );
@@ -130,14 +137,37 @@ export class HeaderComponent {
   protected closeAll(): void {
     this.menuOpen.set(false);
     this.searchOpen.set(false);
+    this.openMenu.set(null);
+  }
+
+  /** Hovering opens a dropdown and immediately replaces any other one. */
+  protected hoverOpen(key: string): void {
+    clearTimeout(this.closeTimer);
+    this.openMenu.set(key);
+  }
+
+  /** Small delay so crossing the gap between trigger and panel doesn't flicker. */
+  protected hoverClose(key: string): void {
+    clearTimeout(this.closeTimer);
+    this.closeTimer = setTimeout(() => {
+      if (this.openMenu() === key) this.openMenu.set(null);
+    }, 140);
+  }
+
+  protected toggleDropdown(key: string): void {
+    clearTimeout(this.closeTimer);
+    // Click keeps it open (hover already opened it); outside click / Escape close it.
+    this.openMenu.set(key);
+  }
+
+  protected onDocumentClick(event: MouseEvent): void {
+    if (this.openMenu() && !(event.target as Element | null)?.closest('[data-nav-item]')) {
+      this.openMenu.set(null);
+    }
   }
 
   protected switchLanguage(): void {
     void this.language.toggle();
   }
 
-  protected onSearch(query: string): void {
-    // No dedicated results page yet – route here once `/search` exists.
-    void this.router.navigate(['/'], { queryParams: { q: query } });
-  }
 }

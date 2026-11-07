@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { EXTERNAL_LINKS } from '../../core/config/site.config';
@@ -13,27 +13,45 @@ import { PageHeaderComponent } from '../../shared/ui/page-header/page-header.com
   imports: [RouterLink, TranslatePipe, TranslateListPipe, IconComponent, PageHeaderComponent, BulletListComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <app-page-header titleKey="pages.admission.title" subtitleKey="pages.admission.intro" image="images/ref/hero/slide-07.jpg" />
+    <app-page-header image="images/ref/header/library.jpg" titleKey="pages.admission.title" subtitleKey="pages.admission.intro" />
 
     <section class="bg-surface py-16 lg:py-24">
       <div class="container">
         <h2 class="text-3xl font-extrabold text-brand-900" data-aos="fade-up">{{ 'pages.admission.rulesTitle' | translate }}</h2>
 
-        <div class="mt-10 grid gap-6 lg:grid-cols-2">
-          <article class="card" data-aos="fade-up">
+        <!-- Phones: one division at a time, picked from a pill rail -->
+        <div role="tablist" class="hide-scrollbar -mx-[var(--gutter)] mt-6 flex gap-2 overflow-x-auto px-[var(--gutter)] pb-1 lg:hidden">
+          @for (label of 'pages.admission.tabs' | translateList; track $index; let i = $index) {
+            <button
+              type="button"
+              role="tab"
+              class="shrink-0 whitespace-nowrap rounded-full px-5 py-2.5 text-[0.85rem] font-extrabold transition active:scale-95"
+              [class]="i === rule() ? 'bg-brand-600 text-white shadow-soft' : 'bg-white text-brand-900 shadow-soft'"
+              [attr.aria-selected]="i === rule()"
+              (click)="rule.set(i)"
+            >
+              {{ label }}
+            </button>
+          }
+        </div>
+
+        <div class="mt-5 grid gap-6 lg:mt-10 lg:grid-cols-2">
+          <article class="card" [class.max-lg:hidden]="rule() !== 0">
             <h3 class="card-title">{{ 'pages.admission.bisTitle' | translate }}</h3>
             <app-bullet-list [items]="'pages.admission.bis' | translateList" />
           </article>
 
-          <article class="card" data-aos="fade-up" data-aos-delay="100">
+          <article class="card" [class.max-lg:hidden]="rule() !== 1">
             <h3 class="card-title">{{ 'pages.admission.tourismTitle' | translate }}</h3>
             <app-bullet-list [items]="'pages.admission.tourism' | translateList" />
+          </article>
 
-            <h3 class="card-title mt-8">{{ 'pages.admission.guidingTitle' | translate }}</h3>
+          <article class="card" [class.max-lg:hidden]="rule() !== 2">
+            <h3 class="card-title">{{ 'pages.admission.guidingTitle' | translate }}</h3>
             <app-bullet-list [items]="'pages.admission.guiding' | translateList" />
           </article>
 
-          <article class="card lg:col-span-2" data-aos="fade-up">
+          <article class="card" [class.max-lg:hidden]="rule() !== 3">
             <h3 class="card-title">{{ 'pages.admission.foreignTitle' | translate }}</h3>
             <p class="leading-loose text-ink/85">{{ 'pages.admission.foreign' | translate }}</p>
           </article>
@@ -82,8 +100,13 @@ import { PageHeaderComponent } from '../../shared/ui/page-header/page-header.com
     .card {
       border-radius: 1.5rem;
       background: #fff;
-      padding: 1.75rem;
+      padding: 1.25rem;
       box-shadow: 0 8px 30px -8px rgb(36 52 63 / 0.12);
+    }
+    @media (min-width: 640px) {
+      .card {
+        padding: 1.75rem;
+      }
     }
     .card-title {
       margin-bottom: 1.25rem;
@@ -97,5 +120,7 @@ import { PageHeaderComponent } from '../../shared/ui/page-header/page-header.com
   `,
 })
 export class AdmissionPage {
+  /** Which division's rules are visible on phones. */
+  protected readonly rule = signal(0);
   protected readonly portalUrl = EXTERNAL_LINKS.studentPortal;
 }

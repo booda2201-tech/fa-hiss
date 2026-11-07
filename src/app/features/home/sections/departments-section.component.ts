@@ -17,16 +17,16 @@ import { SectionHeadingComponent } from '../../../shared/ui/section-heading/sect
       <div class="container">
         <app-section-heading eyebrowKey="departments.eyebrow" titleKey="departments.title" data-aos="fade-up" />
 
-        <div class="mt-12 grid gap-8 md:grid-cols-2">
+        <div class="hide-scrollbar -mx-[var(--gutter)] mt-10 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-px-[var(--gutter)] px-[var(--gutter)] pb-8 md:mx-0 md:mt-12 md:grid md:grid-cols-2 md:gap-8 md:overflow-visible md:px-0 md:pb-0">
           @for (dept of departments; track dept.id; let i = $index) {
-            <div data-aos="fade-up" [attr.data-aos-delay]="(i % 2) * 120">
+            <div class="w-[82vw] max-w-[22rem] shrink-0 snap-start md:w-auto md:max-w-none" data-aos="fade-up" [attr.data-aos-delay]="(i % 2) * 120">
             <a
               appHoverLift
               [routerLink]="['/departments', dept.slug]"
               class="group relative flex h-full flex-col overflow-hidden rounded-4xl bg-white shadow-card ring-1 ring-black/5 transition-shadow duration-500 hover:shadow-luxe focus-visible:shadow-luxe"
             >
               <div class="relative aspect-[16/8] overflow-hidden bg-brand-900">
-                <img
+                <img decoding="async"
                   [src]="dept.image"
                   alt=""
                   width="800"
@@ -39,12 +39,12 @@ import { SectionHeadingComponent } from '../../../shared/ui/section-heading/sect
               </div>
 
               <!-- Content; the icon medallion straddles the photo edge -->
-              <div class="relative flex flex-1 flex-col px-8 pb-8 pt-12 sm:px-10 sm:pb-10">
+              <div class="relative flex flex-1 flex-col px-6 pb-6 pt-12 sm:px-10 sm:pb-10">
                 <span
                   data-hover-icon
                   class="absolute -top-10 start-8 grid h-20 w-20 place-items-center rounded-3xl bg-brand-gradient shadow-soft-lg ring-4 ring-white sm:start-10"
                 >
-                  <img [src]="dept.icon" alt="" width="56" height="56" class="h-12 w-12" loading="lazy" />
+                  <img decoding="async" [src]="dept.icon" alt="" width="56" height="56" class="h-12 w-12" loading="lazy" />
                 </span>
 
                 <h3 class="text-2xl font-extrabold text-brand-900 transition-colors group-hover:text-accent-600">

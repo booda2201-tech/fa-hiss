@@ -66,6 +66,10 @@ export class HeroComponent {
   private readonly root = viewChild.required<ElementRef<HTMLElement>>('root');
   private mm?: gsap.MatchMedia;
 
+  /** Endless background tweens – paused while the hero is scrolled out of view (nothing visible changes). */
+  private ambient: gsap.core.Tween[] = [];
+  private inView = true;
+
   /** Headline as lines of words; recomputed when the language changes. */
   protected readonly lines = computed<HeadlineLine[]>(() => {
     this.language.lang(); // dependency: re-run on language switch
@@ -88,12 +92,29 @@ export class HeroComponent {
       if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
       const timer = setInterval(() => {
         const total = this.images().length;
-        if (total < 2) return;
+        if (total < 2 || !this.inView) return;
         const next = (this.activeSlide() + 1) % total;
         this.activeSlide.set(next);
         this.loadedCount.update((count) => Math.max(count, next + 2));
       }, 6000);
       this.destroyRef.onDestroy(() => clearInterval(timer));
+    });
+
+    // Stop all ambient motion (orbs, photo zoom, CSS ping/bounce) while the hero is off-screen so it
+    // doesn't keep the main thread / compositor busy during the rest of the page.
+    afterNextRender(() => {
+      const el = this.root().nativeElement;
+      if (typeof IntersectionObserver === 'undefined') return;
+      const io = new IntersectionObserver(([entry]) => {
+        this.inView = entry.isIntersecting;
+        el.classList.toggle('is-offscreen', !this.inView);
+        for (const tween of this.ambient) {
+          if (this.inView) tween.resume();
+          else tween.pause();
+        }
+      });
+      io.observe(el);
+      this.destroyRef.onDestroy(() => io.disconnect());
     });
 
     this.destroyRef.onDestroy(() => this.mm?.revert());
@@ -130,11 +151,15 @@ export class HeroComponent {
         );
 
       // Ambient background motion.
-      gsap.to('.hero-orb-a', { x: 50, y: -30, duration: 9, repeat: -1, yoyo: true, ease: 'sine.inOut' });
-      gsap.to('.hero-orb-b', { x: -40, y: 40, duration: 11, repeat: -1, yoyo: true, ease: 'sine.inOut' });
+      const ambient = [
+        gsap.to('.hero-orb-a', { x: 50, y: -30, duration: 9, repeat: -1, yoyo: true, ease: 'sine.inOut' }),
+        gsap.to('.hero-orb-b', { x: -40, y: 40, duration: 11, repeat: -1, yoyo: true, ease: 'sine.inOut' }),
+      ];
       if (this.root().nativeElement.querySelector('.hero-photo')) {
-        gsap.fromTo('.hero-photo', { scale: 1.12 }, { scale: 1, duration: 14, ease: 'power1.out' });
+        ambient.push(gsap.fromTo('.hero-photo', { scale: 1.12 }, { scale: 1, duration: 14, ease: 'power1.out' }));
       }
+      this.ambient = ambient;
+      if (!this.inView) ambient.forEach((tween) => tween.pause());
     });
   }
 }

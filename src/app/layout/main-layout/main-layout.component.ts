@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { FooterComponent } from '../footer/footer.component';
 import { HeaderComponent } from '../header/header.component';
+import { MobileDockComponent } from '../mobile-dock/mobile-dock.component';
 
 /** Page shell: skip link + fixed header + routed content + footer. */
 @Component({
   selector: 'app-main-layout',
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, TranslatePipe],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, MobileDockComponent, TranslatePipe],
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: { class: 'flex min-h-screen flex-col' },
   template: `
@@ -25,6 +26,8 @@ import { HeaderComponent } from '../header/header.component';
     </main>
 
     <app-footer />
+
+    <app-mobile-dock />
   `,
 })
 export class MainLayoutComponent {}

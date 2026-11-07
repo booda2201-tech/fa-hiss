@@ -61,13 +61,13 @@ const findService = (key: string): ServiceLink => SERVICES.find((s) => s.labelKe
         />
 
         <!-- Featured quick-access cards -->
-        <ul class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+        <ul class="mt-10 grid grid-cols-2 gap-3 sm:mt-12 sm:gap-5 lg:grid-cols-4 lg:gap-6">
           @for (item of featured; track item.id; let i = $index) {
             <li data-aos="fade-up" [attr.data-aos-delay]="i * 90">
               <a
                 appHoverLift
                 [routerLink]="item.path"
-                class="group relative flex h-full flex-col overflow-hidden rounded-3xl bg-white p-7 shadow-card ring-1 ring-black/5 transition-shadow duration-500 hover:shadow-luxe focus-visible:shadow-luxe"
+                class="group relative flex h-full flex-col overflow-hidden rounded-3xl bg-white p-4 shadow-card ring-1 ring-black/5 transition-shadow duration-500 hover:shadow-luxe focus-visible:shadow-luxe active:scale-[0.98] sm:p-7"
               >
                 <span
                   class="absolute inset-x-0 top-0 h-1.5 origin-left scale-x-0 bg-accent-gradient transition-transform duration-500 ease-out-expo group-hover:scale-x-100 group-focus-visible:scale-x-100 rtl:origin-right"
@@ -76,19 +76,19 @@ const findService = (key: string): ServiceLink => SERVICES.find((s) => s.labelKe
 
                 <span
                   data-hover-icon
-                  class="grid h-16 w-16 place-items-center rounded-2xl bg-brand-gradient text-white shadow-soft"
+                  class="grid h-12 w-12 place-items-center rounded-2xl bg-brand-gradient text-white shadow-soft sm:h-16 sm:w-16"
                 >
-                  <app-icon [name]="item.icon" class="h-8 w-8" />
+                  <app-icon [name]="item.icon" class="h-6 w-6 sm:h-8 sm:w-8" />
                 </span>
 
-                <h3 class="mt-6 text-xl font-extrabold text-brand-900 transition-colors group-hover:text-accent-600">
+                <h3 class="mt-4 text-base font-extrabold leading-snug text-brand-900 transition-colors group-hover:text-accent-600 sm:mt-6 sm:text-xl">
                   {{ item.labelKey | translate }}
                 </h3>
-                <p class="mt-2.5 flex-1 text-base leading-loose text-ink/75">
+                <p class="mt-2 line-clamp-3 flex-1 text-[0.8rem] leading-relaxed text-ink/70 sm:mt-2.5 sm:line-clamp-none sm:text-base sm:leading-loose sm:text-ink/75">
                   {{ 'services.desc.' + item.id | translate }}
                 </p>
 
-                <span class="mt-6 inline-flex items-center gap-2 text-sm font-bold text-accent-600">
+                <span class="mt-4 inline-flex items-center gap-2 text-xs font-bold text-accent-600 sm:mt-6 sm:text-sm">
                   {{ 'services.open' | translate }}
                   <app-icon
                     name="arrow-right"
@@ -111,7 +111,7 @@ const findService = (key: string): ServiceLink => SERVICES.find((s) => s.labelKe
           <div class="mt-6 grid overflow-hidden rounded-3xl bg-surface-soft ring-1 ring-black/5 lg:grid-cols-3">
             @for (group of groups; track group.titleKey; let last = $last) {
               <section
-                class="p-6 sm:p-8"
+                class="p-4 sm:p-8"
                 [class]="last ? '' : 'border-b border-black/5 lg:border-b-0 lg:border-e'"
                 [attr.aria-labelledby]="group.titleKey"
               >
@@ -122,12 +122,12 @@ const findService = (key: string): ServiceLink => SERVICES.find((s) => s.labelKe
                   {{ group.titleKey | translate }}
                 </h4>
 
-                <ul class="mt-5 space-y-1">
+                <ul class="mt-4 grid grid-cols-2 gap-2 sm:mt-5 lg:block lg:space-y-1">
                   @for (service of group.items; track service.labelKey) {
                     <li>
                       <a
                         [routerLink]="service.path"
-                        class="group flex items-center gap-3 rounded-xl px-3 py-3 text-[0.95rem] font-semibold text-ink transition-colors duration-200 hover:bg-white hover:text-accent-600"
+                        class="group flex h-full items-center gap-2.5 rounded-xl bg-white px-3 py-3 text-[0.8rem] font-semibold leading-snug text-ink shadow-soft transition-colors duration-200 hover:text-accent-600 active:scale-[0.97] sm:text-[0.95rem] lg:gap-3 lg:bg-transparent lg:text-[0.95rem] lg:shadow-none lg:hover:bg-white"
                       >
                         <app-icon
                           [name]="service.icon"
@@ -139,7 +139,7 @@ const findService = (key: string): ServiceLink => SERVICES.find((s) => s.labelKe
                         <app-icon
                           name="arrow-right"
                           [flipRtl]="true"
-                          class="h-3.5 w-3.5 opacity-0 transition duration-200 group-hover:translate-x-0.5 group-hover:opacity-100 rtl:group-hover:-translate-x-0.5"
+                          class="hidden h-3.5 w-3.5 opacity-0 transition duration-200 lg:block group-hover:translate-x-0.5 group-hover:opacity-100 rtl:group-hover:-translate-x-0.5"
                         />
                       </a>
                     </li>

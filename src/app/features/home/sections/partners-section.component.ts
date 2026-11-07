@@ -22,7 +22,7 @@ import { SectionHeadingComponent } from '../../../shared/ui/section-heading/sect
               [attr.data-aos-delay]="(i % 5) * 60"
             >
               <span class="absolute inset-x-6 bottom-0 h-0.5 origin-center scale-x-0 bg-accent-500 transition-transform duration-500 group-hover:scale-x-100" aria-hidden="true"></span>
-              <img
+              <img decoding="async"
                 [src]="partner.logo"
                 [alt]="partner.nameKey | translate"
                 class="max-h-full max-w-full object-contain opacity-80 grayscale transition duration-500 group-hover:opacity-100 group-hover:grayscale-0"
@@ -49,7 +49,7 @@ import { SectionHeadingComponent } from '../../../shared/ui/section-heading/sect
               data-aos="fade-up"
               [attr.data-aos-delay]="(i % 4) * 60"
             >
-              <img
+              <img decoding="async"
                 [src]="photo"
                 [alt]="'gallery.alt' | translate"
                 width="640"

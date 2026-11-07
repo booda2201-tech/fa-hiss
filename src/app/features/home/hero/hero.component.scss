@@ -36,6 +36,11 @@
   animation: hero-bounce 1.8s ease-in-out infinite;
 }
 
+.is-offscreen .hero-dot > span:first-child,
+.is-offscreen .hero-bounce {
+  animation-play-state: paused;
+}
+
 @keyframes hero-ping {
   75%,
   100% {

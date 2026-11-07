@@ -10,11 +10,44 @@ import { PageHeaderComponent } from '../../shared/ui/page-header/page-header.com
   imports: [TranslatePipe, IconComponent, PageHeaderComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <app-page-header titleKey="pages.contact.title" subtitleKey="pages.contact.intro" image="images/ref/hero/slide-08.jpg" />
+    <app-page-header image="images/ref/header/library.jpg" titleKey="pages.contact.title" subtitleKey="pages.contact.intro" />
 
-    <section class="bg-surface py-16 lg:py-24">
+    <section class="bg-surface pb-14 pt-0 md:py-16 lg:py-24">
       <div class="container">
-        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Phones: three one-tap actions up front -->
+        <ul class="relative z-10 -mt-5 mb-6 grid grid-cols-3 gap-3 md:hidden">
+          <li>
+            <a
+              [href]="'tel:' + contact.landlines[0].tel"
+              class="flex flex-col items-center gap-2 rounded-3xl bg-white px-2 py-4 text-center text-[0.8rem] font-extrabold text-brand-900 shadow-soft-lg ring-1 ring-black/5 active:scale-95"
+            >
+              <span class="grid h-12 w-12 place-items-center rounded-2xl bg-brand-gradient text-white"><app-icon name="phone" class="h-6 w-6" /></span>
+              {{ 'dock.call' | translate }}
+            </a>
+          </li>
+          <li>
+            <a
+              [href]="'https://wa.me/' + contact.whatsapp.tel.slice(1)"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex flex-col items-center gap-2 rounded-3xl bg-white px-2 py-4 text-center text-[0.8rem] font-extrabold text-brand-900 shadow-soft-lg ring-1 ring-black/5 active:scale-95"
+            >
+              <span class="grid h-12 w-12 place-items-center rounded-2xl bg-[#1fa855] text-white"><app-icon name="whatsapp" class="h-6 w-6" /></span>
+              {{ 'dock.whatsapp' | translate }}
+            </a>
+          </li>
+          <li>
+            <a
+              [href]="'mailto:' + contact.emails.support"
+              class="flex flex-col items-center gap-2 rounded-3xl bg-white px-2 py-4 text-center text-[0.8rem] font-extrabold text-brand-900 shadow-soft-lg ring-1 ring-black/5 active:scale-95"
+            >
+              <span class="grid h-12 w-12 place-items-center rounded-2xl bg-accent-gradient text-white"><app-icon name="mail" class="h-6 w-6" /></span>
+              {{ 'pages.contact.emailTitle' | translate }}
+            </a>
+          </li>
+        </ul>
+
+        <div class="grid grid-cols-2 gap-3 sm:gap-6 lg:grid-cols-3">
           <!-- Landlines -->
           <article class="card" data-aos="fade-up">
             <span class="icon-chip"><app-icon name="phone" class="h-6 w-6" /></span>
@@ -42,7 +75,7 @@ import { PageHeaderComponent } from '../../shared/ui/page-header/page-header.com
           </article>
 
           <!-- WhatsApp -->
-          <article class="card" data-aos="fade-up" data-aos-delay="200">
+          <article class="card col-span-2 lg:col-span-1" data-aos="fade-up" data-aos-delay="200">
             <span class="icon-chip"><app-icon name="message-circle" class="h-6 w-6" /></span>
             <h2 class="mt-4 text-xl font-extrabold text-brand-900">{{ 'pages.contact.whatsapp' | translate }}</h2>
             <p class="mt-4">
@@ -57,7 +90,7 @@ import { PageHeaderComponent } from '../../shared/ui/page-header/page-header.com
           </article>
 
           <!-- E-mails -->
-          <article class="card md:col-span-2 lg:col-span-3" data-aos="fade-up">
+          <article class="card col-span-2 lg:col-span-3" data-aos="fade-up">
             <div class="flex items-center gap-4">
               <span class="icon-chip"><app-icon name="mail" class="h-6 w-6" /></span>
               <h2 class="text-xl font-extrabold text-brand-900">{{ 'pages.contact.emailTitle' | translate }}</h2>
@@ -129,8 +162,13 @@ import { PageHeaderComponent } from '../../shared/ui/page-header/page-header.com
     .card {
       border-radius: 1.5rem;
       background: #fff;
-      padding: 1.75rem;
+      padding: 1.1rem;
       box-shadow: 0 8px 30px -8px rgb(36 52 63 / 0.12);
+    }
+    @media (min-width: 640px) {
+      .card {
+        padding: 1.75rem;
+      }
     }
     .icon-chip {
       display: grid;

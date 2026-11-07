@@ -1,4 +1,12 @@
-﻿import { PAGE_FILES } from './pages.files';
+﻿import {
+  GRADUATION_ALBUMS,
+  PR_ALBUMS,
+  SEMINAR_CONFERENCE_ALBUMS,
+  SEMINAR_OTHER_ALBUMS,
+  SEMINAR_SEASON_ALBUMS,
+} from './pages.albums';
+import { PAGE_FILES } from './pages.files';
+import { EXAM_GROUPS, RESULT_GROUPS, SCHEDULE_GROUPS } from './pages.files.extra';
 import { PAGE_IMAGES } from './pages.images';
 
 /**
@@ -22,6 +30,12 @@ export type PageBlock =
   | { type: 'people'; titleKey?: string; namesKey: string; rolesKey: string; photos: readonly string[] }
   /** Titled events with text and a few photos each. */
   | { type: 'events'; titleKey?: string; titlesKey: string; textsKey: string }
+  /** Several titled file lists: `titlesKey` / `filesKey` are arrays aligned with `groups[group][file]`. */
+  | { type: 'fileGroups'; titlesKey: string; filesKey: string; groups: readonly (readonly string[])[]; kind: 'download' | 'external' }
+  /** Titled photo albums with optional text: `titlesKey` / `textsKey` are arrays aligned with `albums`. */
+  | { type: 'albums'; tabs?: boolean; titleKey?: string; titlesKey: string; textsKey: string; albums: readonly (readonly string[])[] }
+  /** Quality-unit organizational chart (labels under `info.quality.org`). */
+  | { type: 'org' }
   /** Call-to-action panel. */
   | { type: 'cta'; titleKey: string; textKey: string; buttonKey: string; route?: string; href?: string };
 
@@ -45,10 +59,10 @@ export const INFO_PAGES: readonly InfoPageDef[] = [
     introKey: 'info.schedules.intro',
     blocks: [
       {
-        type: 'files',
-        titleKey: 'info.schedules.filesTitle',
-        labelsKey: 'info.schedules.files',
-        hrefs: PAGE_FILES.schedules,
+        type: 'fileGroups',
+        titlesKey: 'info.schedules.groupTitles',
+        filesKey: 'info.schedules.groupFiles',
+        groups: SCHEDULE_GROUPS,
         kind: 'download',
       },
     ],
@@ -60,10 +74,10 @@ export const INFO_PAGES: readonly InfoPageDef[] = [
     introKey: 'info.exams.intro',
     blocks: [
       {
-        type: 'files',
-        titleKey: 'info.exams.filesTitle',
-        labelsKey: 'info.exams.files',
-        hrefs: PAGE_FILES.exams,
+        type: 'fileGroups',
+        titlesKey: 'info.exams.groupTitles',
+        filesKey: 'info.exams.groupFiles',
+        groups: EXAM_GROUPS,
         kind: 'download',
       },
     ],
@@ -75,10 +89,10 @@ export const INFO_PAGES: readonly InfoPageDef[] = [
     introKey: 'info.results.intro',
     blocks: [
       {
-        type: 'files',
-        titleKey: 'info.results.filesTitle',
-        labelsKey: 'info.results.files',
-        hrefs: PAGE_FILES.results,
+        type: 'fileGroups',
+        titlesKey: 'info.results.groupTitles',
+        filesKey: 'info.results.groupFiles',
+        groups: RESULT_GROUPS,
         kind: 'external',
       },
       {
@@ -149,7 +163,15 @@ export const INFO_PAGES: readonly InfoPageDef[] = [
     titleKey: 'services.graduation',
     group: 'services',
     introKey: 'info.graduation.intro',
-    blocks: [{ type: 'gallery', titleKey: 'info.photosTitle', images: img('graduation') }],
+    blocks: [
+      {
+        type: 'albums',
+        tabs: true,
+        titlesKey: 'info.graduation.titles',
+        textsKey: 'info.graduation.texts',
+        albums: GRADUATION_ALBUMS,
+      },
+    ],
   },
   {
     slug: 'military',
@@ -210,18 +232,26 @@ export const INFO_PAGES: readonly InfoPageDef[] = [
     introKey: 'info.seminars.intro',
     blocks: [
       {
-        type: 'events',
+        type: 'albums',
         titleKey: 'info.seminars.conferencesTitle',
         titlesKey: 'info.seminars.conferenceTitles',
         textsKey: 'info.seminars.conferenceTexts',
+        albums: SEMINAR_CONFERENCE_ALBUMS,
       },
       {
-        type: 'events',
+        type: 'albums',
         titleKey: 'info.seminars.seasonTitle',
         titlesKey: 'info.seminars.seminarTitles',
         textsKey: 'info.seminars.seminarTexts',
+        albums: SEMINAR_SEASON_ALBUMS,
       },
-      { type: 'gallery', titleKey: 'info.photosTitle', images: img('seminars') },
+      {
+        type: 'albums',
+        titleKey: 'info.seminars.otherTitle',
+        titlesKey: 'info.seminars.otherTitles',
+        textsKey: 'info.seminars.otherTexts',
+        albums: SEMINAR_OTHER_ALBUMS,
+      },
     ],
   },
   {
@@ -252,7 +282,15 @@ export const INFO_PAGES: readonly InfoPageDef[] = [
     titleKey: 'services.publicRelations',
     group: 'media',
     introKey: 'info.publicRelations.intro',
-    blocks: [{ type: 'gallery', titleKey: 'info.photosTitle', images: img('public-relations') }],
+    blocks: [
+      {
+        type: 'albums',
+        tabs: true,
+        titlesKey: 'info.publicRelations.titles',
+        textsKey: 'info.publicRelations.texts',
+        albums: PR_ALBUMS,
+      },
+    ],
   },
   {
     slug: 'youth',
@@ -299,6 +337,7 @@ export const INFO_PAGES: readonly InfoPageDef[] = [
       { type: 'list', itemsKey: 'info.quality.goals' },
       { type: 'text', titleKey: 'info.quality.establishedTitle', textKey: 'info.quality.established' },
       { type: 'list', titleKey: 'info.quality.boardTitle', itemsKey: 'info.quality.board' },
+      { type: 'org' },
       {
         type: 'files',
         titleKey: 'info.quality.docsTitle',

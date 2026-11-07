@@ -1,45 +1,50 @@
-<!-- Top stripe in the logo colours -->
-<div aria-hidden="true" class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-brand-600 via-white to-brand-600"></div>
+<!-- Backdrop: campus photo under a deep maroon wash (as on the legacy site) -->
+<div aria-hidden="true" class="pointer-events-none absolute inset-0">
+  <img decoding="async" src="images/ref/hero/slide-03.jpg" alt="" class="h-full w-full object-cover opacity-30" loading="lazy" />
+  <div class="absolute inset-0 bg-gradient-to-b from-[#5a0a0f]/95 via-[#4a080c]/95 to-[#2e0407]"></div>
+  <div class="orb absolute -top-32 end-[-5rem] h-80 w-80 rounded-full bg-accent-600/25 blur-[120px]"></div>
+</div>
 
-<div class="container relative py-16 lg:py-20">
+<div class="container relative pb-10 pt-12 lg:pb-14 lg:pt-20">
   <!-- Newsletter band -->
   <section
-    class="mb-14 grid items-center gap-6 rounded-3xl bg-white/10 p-6 ring-1 ring-white/25 sm:p-8 lg:grid-cols-2 lg:gap-12 lg:p-10"
+    class="relative mb-14 grid items-center gap-6 rounded-3xl bg-white/[0.08] p-6 ring-1 ring-white/15 backdrop-blur-sm sm:p-8 lg:mb-16 lg:grid-cols-2 lg:gap-12 lg:p-10"
     aria-labelledby="newsletter-title"
   >
-    <div>
+
+    <div class="relative">
       <h2 id="newsletter-title" class="text-2xl font-extrabold sm:text-3xl">
         {{ 'newsletter.title' | translate }}
       </h2>
       <p class="mt-2 max-w-md text-base text-white/90">{{ 'newsletter.description' | translate }}</p>
     </div>
-    <app-newsletter-form (subscribed)="onSubscribed($event)" />
+    <div class="relative [&_.btn-brand]:!bg-accent-600 [&_.btn-brand]:hover:!bg-accent-700 [&_.text-brand-600]:!text-accent-600">
+      <app-newsletter-form (subscribed)="onSubscribed($event)" />
+    </div>
   </section>
 
-  <div class="grid grid-cols-2 gap-10 md:grid-cols-4 lg:grid-cols-12">
+  <div class="grid grid-cols-2 gap-x-8 gap-y-10 md:grid-cols-4 lg:grid-cols-12">
     <!-- Brand -->
     <div class="col-span-2 md:col-span-4 lg:col-span-3">
-      <a routerLink="/" class="inline-flex items-center gap-3 rounded-xl">
-        <span class="grid h-12 w-12 place-items-center rounded-full bg-white p-1.5 shadow-soft">
-          <img src="images/logo.png" alt="" width="100" height="113" class="h-full w-auto object-contain" loading="lazy" />
-        </span>
-        <span class="text-xl font-extrabold tracking-wide">HISS</span>
+      <a routerLink="/" class="inline-flex items-center gap-4 rounded-xl">
+        <img decoding="async" src="images/logo.png" alt="" width="100" height="113" class="h-24 w-auto drop-shadow-[0_8px_20px_rgba(0,0,0,0.45)]" loading="lazy" />
+        <span class="text-2xl font-extrabold tracking-wide">HISS</span>
       </a>
-      <p class="mt-4 max-w-xs text-[0.95rem] leading-loose text-white/90">
+      <p class="mt-5 max-w-sm text-[0.95rem] leading-loose text-white/70">
         {{ 'footer.about' | translate }}
       </p>
 
-      <ul class="mt-6 flex flex-wrap gap-2" [attr.aria-label]="'footer.social' | translate">
+      <ul class="mt-6 flex flex-wrap gap-2.5" [attr.aria-label]="'footer.social' | translate">
         @for (social of socials; track social.name) {
           <li>
             <a
               [href]="social.href"
               target="_blank"
               rel="noopener noreferrer"
-              class="grid h-10 w-10 place-items-center rounded-xl bg-white/15 text-white transition duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-accent-700"
+              class="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white ring-1 ring-white/15 transition duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-accent-700 hover:ring-white"
               [attr.aria-label]="social.name"
             >
-              <app-icon [name]="social.icon" class="h-[1.15rem] w-[1.15rem]" />
+              <app-icon [name]="social.icon" class="h-[1.05rem] w-[1.05rem]" />
             </a>
           </li>
         }
@@ -47,19 +52,19 @@
     </div>
 
     <!-- Link groups -->
-    @for (group of groups; track group.titleKey) {
-      <nav class="lg:col-span-2" [attr.aria-labelledby]="group.titleKey">
+    @for (group of groups; track group.titleKey; let last = $last) {
+      <nav [class]="last ? 'col-span-2 md:col-span-1 lg:col-span-2' : 'lg:col-span-2'" [attr.aria-labelledby]="group.titleKey">
         <h3 [id]="group.titleKey" class="text-base font-extrabold text-white">
           {{ group.titleKey | translate }}
         </h3>
-        <span aria-hidden="true" class="mt-2 block h-0.5 w-8 rounded-full bg-white/70"></span>
-        <ul class="mt-5 space-y-3">
+        <span aria-hidden="true" class="mt-2.5 block h-0.5 w-8 rounded-full bg-accent-400"></span>
+        <ul class="mt-5 space-y-3" [class]="last ? 'max-md:grid max-md:grid-cols-2 max-md:gap-x-8 max-md:space-y-0 max-md:gap-y-3' : ''">
           @for (link of group.links; track link.labelKey) {
             <li>
               <a
                 [routerLink]="link.path"
                 [fragment]="link.fragment"
-                class="text-[0.95rem] text-white/90 underline-offset-4 transition-colors duration-300 hover:text-white hover:underline"
+                class="inline-block text-[0.95rem] text-white/70 transition duration-300 hover:translate-x-1 hover:text-white rtl:hover:-translate-x-1"
               >
                 {{ link.labelKey | translate }}
               </a>
@@ -74,25 +79,31 @@
       <h3 class="text-base font-extrabold text-white">
         {{ 'footer.contact' | translate }}
       </h3>
-      <span aria-hidden="true" class="mt-2 block h-0.5 w-8 rounded-full bg-white/70"></span>
-      <ul class="mt-5 space-y-4 text-[0.95rem] text-white/90">
+      <span aria-hidden="true" class="mt-2.5 block h-0.5 w-8 rounded-full bg-accent-400"></span>
+      <ul class="mt-5 space-y-4 text-[0.95rem] text-white/70">
         <li class="flex items-start gap-3">
-          <app-icon name="map-pin" class="mt-1 h-4 w-4 shrink-0 text-white" />
-          <span>{{ 'footer.address' | translate }}</span>
+          <span class="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-white/10 text-accent-200">
+            <app-icon name="map-pin" class="h-4 w-4" />
+          </span>
+          <span class="leading-relaxed">{{ 'footer.address' | translate }}</span>
         </li>
         <li class="flex items-start gap-3">
-          <app-icon name="phone" class="mt-1 h-4 w-4 shrink-0 text-white" />
-          <ul class="space-y-1.5" dir="ltr">
+          <span class="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-white/10 text-accent-200">
+            <app-icon name="phone" class="h-4 w-4" />
+          </span>
+          <ul class="space-y-1" dir="ltr">
             @for (phone of contact.landlines; track phone.tel) {
               <li>
-                <a [href]="'tel:' + phone.tel" class="transition-colors hover:text-white hover:underline">{{ phone.label }}</a>
+                <a [href]="'tel:' + phone.tel" class="transition-colors hover:text-white">{{ phone.label }}</a>
               </li>
             }
           </ul>
         </li>
         <li class="flex items-center gap-3">
-          <app-icon name="mail" class="h-4 w-4 shrink-0 text-white" />
-          <a [href]="'mailto:' + contact.emails.support" class="break-all transition-colors hover:text-white hover:underline">
+          <span class="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-white/10 text-accent-200">
+            <app-icon name="mail" class="h-4 w-4" />
+          </span>
+          <a [href]="'mailto:' + contact.emails.support" class="break-all transition-colors hover:text-white">
             {{ contact.emails.support }}
           </a>
         </li>
@@ -102,8 +113,8 @@
 </div>
 
 <!-- Bottom bar -->
-<div class="relative bg-accent-700">
-  <div class="container flex flex-col items-center justify-between gap-2 py-5 text-sm text-white/90 sm:flex-row">
+<div class="relative border-t border-white/10 bg-black/30">
+  <div class="container flex flex-col items-center justify-between gap-2 py-5 text-sm text-white/60 max-md:pb-28 sm:flex-row">
     <p>{{ 'footer.rights' | translate: { year: year } }}</p>
     <p>{{ 'brand.name' | translate }}</p>
   </div>

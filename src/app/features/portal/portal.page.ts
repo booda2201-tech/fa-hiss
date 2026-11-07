@@ -18,13 +18,13 @@ const QUICK = ['schedules', 'exams', 'results', 'advising', 'library', 'activiti
   imports: [RouterLink, TranslatePipe, IconComponent, PageHeaderComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <app-page-header titleKey="pages.portal.title" subtitleKey="pages.portal.intro" image="images/ref/hero/slide-03.jpg" />
+    <app-page-header titleKey="pages.portal.title" subtitleKey="pages.portal.intro" />
 
     <section class="bg-surface py-16 lg:py-20">
       <div class="container">
         <div class="grid gap-6 lg:grid-cols-5">
           <!-- Sign in -->
-          <article class="relative overflow-hidden rounded-3xl bg-white p-8 shadow-card ring-1 ring-black/5 sm:p-10 lg:col-span-3" data-aos="fade-up">
+          <article class="relative overflow-hidden rounded-3xl bg-white p-6 shadow-card ring-1 ring-black/5 sm:p-10 lg:col-span-3" data-aos="fade-up">
             <span class="absolute inset-x-0 top-0 h-1 bg-accent-gradient" aria-hidden="true"></span>
             <div class="flex items-center gap-4">
               <span class="grid h-14 w-14 place-items-center rounded-2xl bg-brand-600 text-white shadow-soft">
@@ -38,7 +38,7 @@ const QUICK = ['schedules', 'exams', 'results', 'advising', 'library', 'activiti
 
             <p class="mt-6 text-base leading-loose text-ink/85">{{ 'pages.portal.loginText' | translate }}</p>
 
-            <a [href]="portalUrl" target="_blank" rel="noopener noreferrer" class="btn-accent mt-8 !px-8 !py-3.5">
+            <a [href]="portalUrl" target="_blank" rel="noopener noreferrer" class="btn-accent mt-6 w-full !px-8 !py-4 text-base sm:mt-8 sm:w-auto sm:!py-3.5">
               {{ 'pages.portal.loginCta' | translate }}
               <app-icon name="external" class="h-4 w-4" />
               <span class="sr-only">{{ 'a11y.newWindow' | translate }}</span>
@@ -47,7 +47,7 @@ const QUICK = ['schedules', 'exams', 'results', 'advising', 'library', 'activiti
           </article>
 
           <!-- Help -->
-          <aside class="rounded-3xl bg-brand-900 p-8 text-white shadow-card sm:p-10 lg:col-span-2" data-aos="fade-up" data-aos-delay="100">
+          <aside class="rounded-3xl bg-brand-900 p-6 text-white shadow-card sm:p-10 lg:col-span-2" data-aos="fade-up" data-aos-delay="100">
             <span class="grid h-12 w-12 place-items-center rounded-2xl bg-white/10 text-accent-300">
               <app-icon name="message-circle" class="h-6 w-6" />
             </span>
@@ -80,12 +80,12 @@ const QUICK = ['schedules', 'exams', 'results', 'advising', 'library', 'activiti
           {{ 'pages.portal.quickTitle' | translate }}
         </h2>
 
-        <ul class="mx-auto mt-10 grid max-w-4xl gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <ul class="mx-auto mt-8 grid max-w-4xl grid-cols-2 gap-3 sm:mt-10 lg:grid-cols-3">
           @for (link of quick; track link.labelKey; let i = $index) {
             <li data-aos="fade-up" [attr.data-aos-delay]="(i % 3) * 60">
               <a
                 [routerLink]="link.path"
-                class="group flex items-center gap-4 rounded-2xl bg-surface-soft p-4 ring-1 ring-black/5 transition duration-300 hover:-translate-y-0.5 hover:bg-white hover:shadow-soft"
+                class="group flex h-full flex-col items-center gap-2.5 rounded-2xl bg-surface-soft p-4 text-center ring-1 ring-black/5 transition duration-300 hover:-translate-y-0.5 hover:bg-white hover:shadow-soft active:scale-[0.97] sm:flex-row sm:gap-4 sm:text-start"
               >
                 <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-brand-600 text-white transition-colors group-hover:bg-accent-600">
                   <app-icon [name]="link.icon" class="h-5 w-5" />
@@ -93,7 +93,7 @@ const QUICK = ['schedules', 'exams', 'results', 'advising', 'library', 'activiti
                 <span class="flex-1 text-sm font-bold text-brand-900">
                   {{ link.labelKey | translate }}
                 </span>
-                <app-icon name="arrow-right" [flipRtl]="true" class="h-3.5 w-3.5 text-ink-muted/60" />
+                <app-icon name="arrow-right" [flipRtl]="true" class="hidden h-3.5 w-3.5 text-ink-muted/60 sm:block" />
               </a>
             </li>
           }

@@ -21,6 +21,15 @@
     @apply container;
   }
 
+  // Swipe rails: no visible scrollbar.
+  .hide-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
   // Buttons ---------------------------------------------------------------
   .btn {
     @apply inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3
@@ -42,5 +51,42 @@
 
   .btn-glass {
     @apply btn glass text-white hover:bg-white/20 hover:-translate-y-0.5;
+  }
+}
+
+// Phone performance --------------------------------------------------------
+// Same look, far cheaper to paint. Both rules only apply below 768px; desktop is untouched.
+@media (max-width: 767.98px) {
+  // Soft decorative glows: a 100px+ `filter: blur()` on a huge element is re-rasterised on every
+  // tile that scrolls into view and is the #1 cause of dropped frames on phones. A radial mask on the
+  // enlarged element gives the same gaussian-looking falloff without any filter.
+  .orb {
+    filter: none !important;
+    scale: 1.9;
+    -webkit-mask-image: radial-gradient(
+      closest-side,
+      rgb(0 0 0 / 0.87),
+      rgb(0 0 0 / 0.6) 25%,
+      rgb(0 0 0 / 0.3) 50%,
+      rgb(0 0 0 / 0.1) 75%,
+      transparent
+    );
+    mask-image: radial-gradient(
+      closest-side,
+      rgb(0 0 0 / 0.87),
+      rgb(0 0 0 / 0.6) 25%,
+      rgb(0 0 0 / 0.3) 50%,
+      rgb(0 0 0 / 0.1) 75%,
+      transparent
+    );
+  }
+
+  // Backdrop blur re-samples everything behind the element on every scrolled frame. All the blurred
+  // surfaces on phones sit on (almost) opaque or dark layers, so dropping it is visually identical.
+  .glass,
+  .glass-light,
+  [class*='backdrop-blur'] {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
   }
 }

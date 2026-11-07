@@ -125,7 +125,7 @@ export const SOCIAL_LINKS: readonly SocialLink[] = [
   { name: 'LinkedIn', icon: 'linkedin', href: 'https://www.linkedin.com/in/hiss-heliopolis/' },
   { name: 'YouTube', icon: 'youtube', href: 'https://www.youtube.com/@hiss-heliopolis' },
   { name: 'X', icon: 'twitter', href: 'https://x.com/HHeliopolis' },
-  { name: 'WhatsApp', icon: 'message-circle', href: 'https://wa.me/201274066668' },
+  { name: 'WhatsApp', icon: 'whatsapp', href: 'https://wa.me/201274066668' },
 ];
 
 export interface PhoneNumber {

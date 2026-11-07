@@ -38,9 +38,9 @@
             target="_blank"
             rel="noopener noreferrer"
             [attr.aria-label]="s.name"
-            class="grid h-7 w-7 place-items-center rounded-full transition-colors hover:bg-white/15 hover:text-white"
+            class="grid h-8 w-8 place-items-center rounded-full text-white/90 transition-colors hover:bg-white hover:text-accent-600"
           >
-            <app-icon [name]="s.icon" class="h-3.5 w-3.5" />
+            <app-icon [name]="s.icon" class="h-4 w-4" />
           </a>
         </li>
       }
@@ -64,7 +64,7 @@
           class="grid shrink-0 place-items-center rounded-full bg-white p-1.5 shadow-soft ring-1 ring-black/5 transition-all duration-500"
           [class]="scrolled() ? 'h-12 w-12' : 'h-14 w-14'"
         >
-          <img src="images/logo.png" alt="" width="100" height="113" class="h-full w-auto object-contain" />
+          <img decoding="async" src="images/logo.png" alt="" width="100" height="113" class="h-full w-auto object-contain" />
         </span>
         <span class="hidden flex-col leading-tight sm:flex">
           <span class="text-lg font-extrabold tracking-wide">HISS</span>
@@ -79,7 +79,12 @@
         <ul class="flex items-center gap-0.5">
           @for (item of nav; track item.labelKey) {
             @if (item.departments) {
-              <li class="group relative">
+              <li
+                class="relative"
+                data-nav-item
+                (mouseenter)="hoverOpen(item.labelKey)"
+                (mouseleave)="hoverClose(item.labelKey)"
+              >
                 <a
                   class="nav-link inline-flex items-center gap-1"
                   [class]="linkClasses()"
@@ -89,17 +94,21 @@
                   [routerLinkActiveOptions]="activeMatch"
                   ariaCurrentWhenActive="page"
                   aria-haspopup="true"
+                  [attr.aria-expanded]="openMenu() === item.labelKey"
+                  (focus)="openMenu.set(item.labelKey)"
                 >
                   {{ item.labelKey | translate }}
                   <app-icon
                     name="chevron-down"
-                    class="h-3.5 w-3.5 transition-transform duration-300 group-focus-within:rotate-180 group-hover:rotate-180"
+                    class="h-3.5 w-3.5 transition-transform duration-300"
+                    [class.rotate-180]="openMenu() === item.labelKey"
                   />
                 </a>
 
                 <!-- Departments flyout -->
                 <div
-                  class="invisible absolute left-1/2 top-full z-10 w-[23rem] -translate-x-1/2 translate-y-2 pt-3 opacity-0 transition-all duration-300 ease-out-expo group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100"
+                  class="invisible absolute left-1/2 top-full z-10 w-[23rem] -translate-x-1/2 translate-y-2 pt-3 opacity-0 transition-all duration-300 ease-out-expo"
+                  [class]="openMenu() === item.labelKey ? '!visible !translate-y-0 !opacity-100' : ''"
                 >
                   <div class="overflow-hidden rounded-3xl bg-white text-ink shadow-soft-lg ring-1 ring-black/5">
                     <div class="h-1 bg-accent-gradient"></div>
@@ -111,7 +120,7 @@
                             class="flex items-center gap-3 rounded-2xl p-2.5 transition-colors hover:bg-surface"
                           >
                             <span class="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-brand-gradient">
-                              <img [src]="dept.icon" alt="" width="36" height="36" class="h-9 w-9" loading="lazy" />
+                              <img decoding="async" [src]="dept.icon" alt="" width="36" height="36" class="h-9 w-9" loading="lazy" />
                             </span>
                             <span class="min-w-0">
                               <span class="block text-sm font-bold text-ink">
@@ -137,23 +146,32 @@
                 </div>
               </li>
             } @else if (item.children; as children) {
-              <li class="group relative">
+              <li
+                class="relative"
+                data-nav-item
+                (mouseenter)="hoverOpen(item.labelKey)"
+                (mouseleave)="hoverClose(item.labelKey)"
+              >
                 <button
                   type="button"
                   class="nav-link inline-flex items-center gap-1"
                   [class]="linkClasses()"
                   aria-haspopup="true"
+                  [attr.aria-expanded]="openMenu() === item.labelKey"
+                  (click)="toggleDropdown(item.labelKey)"
                 >
                   {{ item.labelKey | translate }}
                   <app-icon
                     name="chevron-down"
-                    class="h-3.5 w-3.5 transition-transform duration-300 group-focus-within:rotate-180 group-hover:rotate-180"
+                    class="h-3.5 w-3.5 transition-transform duration-300"
+                    [class.rotate-180]="openMenu() === item.labelKey"
                   />
                 </button>
 
                 <!-- Dropdown -->
                 <div
-                  class="invisible absolute left-1/2 top-full z-10 w-64 -translate-x-1/2 translate-y-2 pt-3 opacity-0 transition-all duration-300 ease-out-expo group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100"
+                  class="invisible absolute left-1/2 top-full z-10 w-64 -translate-x-1/2 translate-y-2 pt-3 opacity-0 transition-all duration-300 ease-out-expo"
+                  [class]="openMenu() === item.labelKey ? '!visible !translate-y-0 !opacity-100' : ''"
                 >
                   <div class="overflow-hidden rounded-2xl bg-white text-ink shadow-soft-lg ring-1 ring-black/5">
                     <div class="h-1 bg-accent-gradient"></div>
@@ -226,7 +244,7 @@
 
         <button
           type="button"
-          class="grid h-10 w-10 place-items-center rounded-xl transition-colors duration-300 xl:hidden"
+          class="grid h-10 w-10 place-items-center rounded-xl transition-colors duration-300 max-md:hidden xl:hidden"
           [class]="iconButtonClasses()"
           [attr.aria-expanded]="menuOpen()"
           aria-controls="mobile-menu"
@@ -243,7 +261,6 @@
       id="header-search"
       [open]="searchOpen()"
       (closed)="searchOpen.set(false)"
-      (submitted)="onSearch($event)"
     />
 
     <!-- Mobile menu -->

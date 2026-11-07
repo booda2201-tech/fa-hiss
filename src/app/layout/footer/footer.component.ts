@@ -11,7 +11,7 @@ import { NewsletterFormComponent } from '../../shared/ui/newsletter-form/newslet
   imports: [RouterLink, TranslatePipe, IconComponent, NewsletterFormComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './footer.component.html',
-  host: { class: 'relative block overflow-hidden bg-gradient-to-b from-accent-600 to-accent-700 text-white' },
+  host: { class: 'relative block overflow-hidden bg-[#4a080c] text-white' },
 })
 export class FooterComponent {
   protected readonly groups = FOOTER_GROUPS;

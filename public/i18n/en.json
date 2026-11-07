@@ -35,7 +35,7 @@
     "studentPortal": "Student Portal",
     "allDepartments": "View all departments",
     "search": "Search",
-    "searchPlaceholder": "Search programs, news, services…"
+    "searchPlaceholder": "Search departments, services and pages…"
   },
   "hero": {
     "badge": "Since 1975 — fifty years of academic excellence",
@@ -211,6 +211,21 @@
     "protocols": "Training & Employment Partnerships",
     "training": "Summer Training",
     "fieldTrips": "Field Visits",
+    "videos": {
+      "title": "Lectures & Videos",
+      "lectures": "Lectures",
+      "ancestors": "Descendants of the Ancestors",
+      "fieldProgram": "Field Sites Program - Tour Guiding Department",
+      "watch": "Watch on YouTube"
+    },
+    "eyebrow": {
+      "videos": "Learning media",
+      "plans": "Student guide",
+      "events": "Inside the institute"
+    },
+    "studyPlans": "Study Plans by Level",
+    "events": "Event Photos",
+    "openImage": "Click to view the full-size image",
     "downloads": "Downloads",
     "system": "Study System",
     "systemItems": [
@@ -298,7 +313,14 @@
   },
   "gallery": {
     "title": "Moments from Our Events",
-    "alt": "Photo from an institute event"
+    "alt": "Photo from an institute event",
+    "open": "View full size",
+    "close": "Close",
+    "prev": "Previous",
+    "next": "Next",
+    "more": "more photos",
+    "photosTitle": "Photo gallery",
+    "albumsTitle": "Albums"
   },
   "partners": {
     "eyebrow": "Proudly working with",
@@ -382,7 +404,8 @@
         "An annual career fair connecting graduates with suitable employment opportunities."
       ],
       "equivalencyTitle": "Equivalency of Certificates",
-      "equivalency": "All bachelor’s degrees awarded by the institute across its various academic programs are officially recognized as equivalent to the corresponding bachelor’s degrees granted by Egyptian universities in related fields."
+      "equivalency": "All bachelor’s degrees awarded by the institute across its various academic programs are officially recognized as equivalent to the corresponding bachelor’s degrees granted by Egyptian universities in related fields.",
+      "historyNow": "today"
     },
     "admission": {
       "title": "Institute Admission",
@@ -428,7 +451,13 @@
         "A medical report (internal medicine and eye examination), officially stamped, required for applicants to the Tourism & Hospitality Division."
       ],
       "ctaTitle": "Questions about admission?",
-      "ctaText": "The institute team is ready to answer your questions."
+      "ctaText": "The institute team is ready to answer your questions.",
+      "tabs": [
+        "Information systems",
+        "Tourism & hospitality",
+        "Tour guiding",
+        "Arab & foreign certificates"
+      ]
     },
     "contact": {
       "title": "Contact Us",
@@ -483,31 +512,111 @@
     "sidebarPortalTitle": "Student Portal",
     "sidebarPortalText": "Sign in to follow your timetable, results and course registration.",
     "schedules": {
-      "intro": "Lecture timetables for first-year students (general division), academic year 2024 – 2025.",
-      "filesTitle": "Timetable files",
-      "files": [
-        "Summer lecture timetable – general division 2024 – 2025",
-        "Second-term timetable 2024 – 2025 – first year, general"
+      "intro": "Lecture timetables for all years and divisions.",
+      "groupTitles": [
+        "First year – General division",
+        "Tourism, Hospitality & Guiding – second term 2024 – 2025",
+        "Management Information Systems – second term 2024 – 2025",
+        "Business Information Systems"
+      ],
+      "groupFiles": [
+        [
+          "Summer lecture timetable – general division 2024 – 2025",
+          "Second-term timetable 2024 – 2025 – first year, general"
+        ],
+        [
+          "Second-year timetable",
+          "Third-year timetable",
+          "Fourth-year timetable"
+        ],
+        [
+          "Management Information Systems division timetable"
+        ],
+        [
+          "First-year lecture timetable – first term 2025 – 2026",
+          "Second-year lecture timetable – first term 2025 – 2026",
+          "Summer lecture timetable – Business Systems 2024 – 2025"
+        ]
       ]
     },
     "exams": {
-      "intro": "First-term exam timetables for first-year students (general division), 2025.",
-      "filesTitle": "Exam timetables",
-      "files": [
-        "First year (general – term system) 2025 – first-term exam timetable",
-        "First year (general – credit-hours system) 2025 – first-term exam timetable"
+      "intro": "Exam timetables for all years and divisions.",
+      "groupTitles": [
+        "First year – General division (2025)",
+        "Tourism, Hospitality & Guiding (new system) – January 2025 session",
+        "Tourism, Hospitality & Guiding (old system) – January 2025 session",
+        "Equivalency exams"
+      ],
+      "groupFiles": [
+        [
+          "First year (general – term system) – first-term exam timetable",
+          "First year (general – credit-hours system) – first-term exam timetable"
+        ],
+        [
+          "Second year – first-term exam timetable",
+          "Third year – first-term exam timetable",
+          "Fourth year – first-term exam timetable"
+        ],
+        [
+          "Second year – first-term exam timetable",
+          "Third year – first-term exam timetable",
+          "Fourth year – first-term exam timetable"
+        ],
+        [
+          "Equivalency exam timetable – January 2025 session"
+        ]
       ]
     },
     "results": {
-      "intro": "Student results – Tourism & Hotels (credit-hours system).",
-      "filesTitle": "Published results",
-      "files": [
-        "Second year – Tour Guiding",
-        "Second year – Tourism & Hospitality",
-        "First year results – General"
-      ],
+      "intro": "Student results for all years and divisions.",
       "ctaTitle": "Your individual result in the Student Portal",
-      "ctaText": "Follow your grades and the details of every course after signing in to the Student Portal."
+      "ctaText": "Follow your grades and the details of every course after signing in to the Student Portal.",
+      "groupTitles": [
+        "First: Tourism & Hotels – credit hours",
+        "Second: Tourism & Hospitality",
+        "Third: Management Information Systems division",
+        "Fourth: Systems – credit hours",
+        "Fifth: Business Systems",
+        "Business Information Systems – May 2025 results"
+      ],
+      "groupFiles": [
+        [
+          "Second year – Tour Guiding",
+          "Second year – Tourism & Hospitality",
+          "First year results – General"
+        ],
+        [
+          "Tourism & Hospitality – second year",
+          "Tour Guiding (new) – second year",
+          "Hospitality Management – third year",
+          "Tour Guiding (new) – third year",
+          "Tourism Studies (new) – third year",
+          "Hospitality Management (Hotel Management) – fourth year",
+          "Tour Guiding (new) – fourth year",
+          "Tourism Studies – fourth year",
+          "Tourism Studies (Tourism Business Management) – fourth year"
+        ],
+        [
+          "Management Information Systems – fourth year"
+        ],
+        [
+          "Management Systems – level two",
+          "Management Systems – level three"
+        ],
+        [
+          "Business Systems – level one",
+          "Business Systems – level two",
+          "Business Systems – level three"
+        ],
+        [
+          "Level one results – May 2025",
+          "Level two results – May 2025",
+          "Level three results – May 2025",
+          "Level four results – May 2025 (institute)",
+          "Bachelor results May 2025 (ministry)",
+          "Business Information Systems – level four results"
+        ]
+      ]
     },
     "training": {
       "intro": "A Microsoft center equipped with the latest devices and technologies offers IT training courses with leading global companies (Microsoft – Oracle) for all students and graduates.",
@@ -549,7 +658,19 @@
       "intro": "Every year the Alumni Association holds the Employment Forum, attended by many hotel management, tourism and information-systems companies, in a serious effort to provide suitable job opportunities for graduates and to prepare a generation grounded in applied methodologies and armed with both knowledge and skill. The forum is covered by specialized TV channels."
     },
     "graduation": {
-      "intro": "Moments from the 2018 graduation ceremony."
+      "intro": "Moments from the institute’s graduation ceremonies.",
+      "titles": [
+        "Graduation ceremony 2018",
+        "Graduation ceremony 2019",
+        "Graduation ceremony 2022",
+        "Graduation ceremony 2025"
+      ],
+      "texts": [
+        "",
+        "",
+        "",
+        ""
+      ]
     },
     "military": {
       "intro": "Military Education is a core subject for Egyptian male students. It should not be confused with military service in the armed forces: it is a university course taken during the years of study and a basic requirement for obtaining the graduation certificate – without it the student's result is not approved by the Ministry of Higher Education and the Supreme Council of Universities.",
@@ -679,6 +800,21 @@
         "5 November 2024 – delivered by Dr. Islam Mohamed, lecturer in the Tour Guiding Department, under the patronage of Dr. Sameh Fouad Habib, Chairman of the Board, and Prof. Shorouk Ashour, Acting Dean.",
         "14 November 2024 – delivered by Dr. Heba Ibrahim, Italian-language lecturer, at the start of the institute's cultural season and amid strong student turnout.",
         "26 November 2024 – delivered by Dr. Helen Abdel-Hamid, lecturer in the Tourism Studies Department, as part of the institute's cultural season."
+      ],
+      "otherTitle": "More Workshops & Seminars",
+      "otherTitles": [
+        "Workshop \"Digitization and AI in International Publishing\" – 20 November 2024",
+        "Occupational Safety & Health Seminar – 9 November 2023",
+        "Launch of the Presidential Initiative Seminar – 24 September 2024",
+        "Seminar with former Minister of Tourism Hisham Zazou – 23 April 2024",
+        "Tenth of Ramadan – Sixth of October Seminar: The War of Dignity"
+      ],
+      "otherTexts": [
+        "A workshop titled \"Digitization and Artificial Intelligence in International Publishing\", held under the patronage of Prof. Dr. Sameh Fouad Habib, Chairman of the Institute, and Prof. Dr. Shorouk Ashour, Acting Dean, in cooperation with the Quality Assurance Unit director Dr. Hend Sultan and workshop coordinator Dr. Meriel Ibrahim. It was delivered by Prof. Dr. Mostafa Abou El-Soud, Assistant Professor of Economics at the Faculty of Business Administration, British University in Egypt.",
+        "",
+        "",
+        "",
+        ""
       ]
     },
     "journals": {
@@ -694,7 +830,31 @@
       "note": "Manuscripts are received through the journal's website only, which is dedicated to Arabic-language research. Contact: ijths@fa-hiss.edu.eg. We promise researchers a review, editing and publishing service worthy of their trust. – Editorial board of the International Journal of Tourism and Hospitality Sciences."
     },
     "publicRelations": {
-      "intro": "Under the patronage of H.E. President Abdel Fattah El-Sisi, the Higher Institute for Specialized Studies, Heliopolis, took part in the most important event in its history – September 2023, the Day of Excellence of Egyptian Universities and Institutes – where the honoring ceremony featured the procession of top graduates, shining under the flags of Egyptian universities and institutes, before the President at the Suez Canal Authority Stadium."
+      "intro": "News and events of the institute, its notable participations and meetings.",
+      "titles": [
+        "President El-Sisi honors top graduates – September 2023",
+        "Honoring Hospitality students at the InterContinental hotel 2024",
+        "Presidential initiative, 26 November – MODA 2023",
+        "The institute receives an A+ rating – 4 July 2024",
+        "Career fair with Bazooka restaurants 2024",
+        "The institute is a bronze sponsor of the 13th international conference",
+        "Some of our partners in success",
+        "Photos of places in the institute",
+        "Signing of the unified training agreement – 5 February 2023",
+        "First batch graduates at the InterContinental hotels"
+      ],
+      "texts": [
+        "Under the patronage of H.E. President Abdel Fattah El-Sisi, the Higher Institute for Specialized Studies, Heliopolis, took part in the most important event in its history – September 2023, the Day of Excellence of Egyptian Universities and Institutes – where the honoring ceremony featured the procession of top graduates, shining under the flags of Egyptian universities and institutes, before the President at the Suez Canal Authority Stadium.",
+        "",
+        "",
+        "",
+        "Our students attended the career fair on 4 November 2024 under the cooperation protocol previously signed between the institute and the Bazooka restaurants group. The institute was represented by Ms. Mary Tharwat, Public Relations Officer, in cooperation with the Youth Care department, and Bazooka by Mr. Ahmed Hashem, Head of Recruitment.",
+        "The Faculty of Tourism and Hotels at Suez Canal University extends its sincere thanks and appreciation to the Higher Institute for Specialized Studies for its active participation in the 13th International Scientific Conference of the Association of Arab Tourism Faculties, Institutes and Departments, “The Green Economy and the Path to Resource Management and Sustainable Tourism Development in the Arab Region”, held 23–25 November 2023. Conference chair: Prof. Nevine Galal Eid – Vice chair: Prof. Faten Hamdy El-Alimy.",
+        "",
+        "",
+        "On 5 February 2023, for the first time in Egypt, the unified training agreement was signed between the Higher Institute for Specialized Studies, Heliopolis – represented by Prof. Suzan Hassan Abu El-Enein, Dean – and 14 tourism colleges and institutes, with the global InterContinental hotels chain IHG, represented by Peter Frank, Regional General Manager in Egypt. The agreement aims to graduate trained technical staff qualified for the hotel job market, providing all the materials and needs for the professional advancement of trainee students, along with significant financial benefits and an accredited training certificate. Training is delivered in Arabic and English. An unprecedented agreement that stresses the importance of industry and experience working hand in hand with academics and students.",
+        "Celebrating the graduation of the first batch of the institute’s trainees on 24 October 2023 at the “InterContinental Egypt” hotels group, under the unified training agreement signed in February 2023 between the institute – represented by Prof. Suzan Hassan Abu El-Enein, Dean – and 23 tourism colleges and institutes, with the global InterContinental hotels chain IHG, represented by Peter Frank, Regional General Manager in Egypt. An unprecedented agreement that stresses the importance of industry and experience working hand in hand with academics and students."
+      ]
     },
     "youth": {
       "intro": "The institute's administration cares about student activities and student families of all kinds. The Student Union works under the supervision of Youth Care as a link between students and management. For many years the institute has ranked among the top universities' unions nationwide, and the union and student families are notably active and honorably represented among student families and unions across the country.",
@@ -798,7 +958,47 @@
         "Crisis management.",
         "Training course on self-study."
       ],
-      "photosTitle": "Event photos"
+      "photosTitle": "Event photos",
+      "org": {
+        "title": "Unit organizational structure",
+        "head": "Chair of the Unit Board",
+        "executive": "Executive Director of the Unit",
+        "deputy": "Deputy Director of the Unit",
+        "secretary": "Secretariat",
+        "committees": "Executive Committees",
+        "awareness": "Awareness & Media Committee",
+        "training": "Training Committee",
+        "evaluation": "Measurement & Evaluation Committee"
+      }
     }
+  },
+  "dock": {
+    "label": "Quick navigation",
+    "home": "Home",
+    "departments": "Departments",
+    "apply": "Apply",
+    "services": "Services",
+    "more": "More",
+    "close": "Close",
+    "departmentsTitle": "Choose your department",
+    "servicesTitle": "Student services",
+    "moreTitle": "More from the Institute",
+    "call": "Call us",
+    "whatsapp": "WhatsApp",
+    "follow": "Follow us",
+    "showMore": "Show more",
+    "showLess": "Show less"
+  },
+  "search": {
+    "popular": "Popular searches",
+    "results": "Results",
+    "empty": "No matches. Try another word such as \"schedules\", \"admission\" or \"hospitality\".",
+    "hint": "Type a department, service or page…",
+    "kind": {
+      "department": "Department",
+      "service": "Service",
+      "page": "Page"
+    },
+    "clear": "Clear"
   }
 }

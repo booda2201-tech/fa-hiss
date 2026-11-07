@@ -1,0 +1,79 @@
+/** Grouped document links of the schedules / exams / results pages (legacy site + Google Drive). Generated from the legacy pages. */
+export const SCHEDULE_GROUPS: readonly (readonly string[])[] = [
+  [
+    'https://fa-hiss.edu.eg/wp-content/uploads/2025/08/%D8%AC%D8%AF%D9%88%D9%84-%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B5%D9%8A%D9%81%D9%89-%D8%B4%D8%B9%D8%A8%D8%A9-%D8%B9%D8%A7%D9%85%D8%A9-2024-2025-4.pdf',
+    'https://fa-hiss.edu.eg/wp-content/uploads/2025/05/%D8%AC%D8%AF%D9%88%D9%84-%D8%A7%D9%84%D9%81%D8%B1%D9%82%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89-%D8%B9%D8%A7%D9%85%D8%A9.pdf',
+  ],
+  [
+    'https://fa-hiss.edu.eg/wp-content/uploads/2025/05/%D8%AC%D8%AF%D9%88%D9%84-%D8%A7%D9%84%D9%81%D8%B1%D9%82%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%D8%A9-%D8%B3%D9%8A%D8%A7%D8%AD%D8%A9-%D9%88%D8%B6%D9%8A%D8%A7%D9%81%D8%A9-%D9%88%D8%A7%D8%B1%D8%B4%D8%A7%D8%AF.pdf',
+    'https://fa-hiss.edu.eg/wp-content/uploads/2025/05/%D8%AC%D8%AF%D9%88%D9%84-%D8%A7%D9%84%D9%81%D8%B1%D9%82%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB%D8%A9-%D8%B3%D9%8A%D8%A7%D8%AD%D8%A9-%D9%88%D8%B6%D9%8A%D8%A7%D9%81%D8%A9-%D9%88%D8%A7%D8%B1%D8%B4%D8%A7%D8%AF.pdf',
+    'https://fa-hiss.edu.eg/wp-content/uploads/2025/05/%D8%AC%D8%AF%D9%88%D9%84-%D8%A7%D9%84%D9%81%D8%B1%D9%82%D8%A9-%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9%D8%A9-%D8%B3%D9%8A%D8%A7%D8%AD%D8%A9-%D9%88%D8%B6%D9%8A%D8%A7%D9%81%D8%A9-%D9%88%D8%A7%D8%B1%D8%B4%D8%A7%D8%AF.pdf',
+  ],
+  [
+    'https://fa-hiss.edu.eg/wp-content/uploads/2025/05/%D8%AC%D8%AF%D9%88%D9%84-%D8%B4%D8%B9%D8%A8%D8%A9-%D9%86%D8%B8%D9%85-%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA-%D8%A5%D8%AF%D8%A7%D8%B1%D9%8A%D8%A9.pdf',
+  ],
+  [
+    'https://fa-hiss.edu.eg/wp-content/uploads/2026/02/%D8%AC%D8%AF%D9%88%D9%84-%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D9%81%D8%B1%D9%82%D8%A9-%D8%A7%D9%84%D8%A7%D9%88%D9%84%D9%89-%D9%86%D8%B8%D9%85-%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D8%AA%D8%B1%D9%85-%D8%A7%D9%84%D8%A7%D9%88%D9%84-2025-2026.pdf',
+    'https://fa-hiss.edu.eg/wp-content/uploads/2026/02/%D8%AC%D8%AF%D9%88%D9%84-%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D9%81%D8%B1%D9%82%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%D8%A9-%D9%86%D8%B8%D9%85-%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D8%AA%D8%B1%D9%85-%D8%A7%D9%84%D8%A7%D9%88%D9%84-2025-2026.pdf',
+    'https://fa-hiss.edu.eg/wp-content/uploads/2025/08/%D8%AC%D8%AF%D9%88%D9%84-%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B5%D9%8A%D9%81%D9%89-%D8%B4%D8%B9%D8%A8%D8%A9-%D9%86%D8%B8%D9%85-%D8%A3%D8%B9%D9%85%D8%A7%D9%84-2024-2025.pdf',
+  ],
+];
+
+export const EXAM_GROUPS: readonly (readonly string[])[] = [
+  [
+    'https://fa-hiss.edu.eg/wp-content/uploads/2025/05/%D8%AC%D8%AF%D9%88%D9%84-%D8%A7%D9%85%D8%AA%D8%AD%D8%A7%D9%86-%D8%A7%D9%84%D8%AA%D8%B1%D9%85-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D8%A7%D9%84%D9%81%D8%B1%D9%82%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89%D8%B9%D8%A7%D9%85%D8%A9-%D9%86%D8%B8%D8%A7%D9%85-%D8%AA%D8%B1%D9%85-2025.pdf',
+    'https://fa-hiss.edu.eg/wp-content/uploads/2025/05/%D8%AC%D8%AF%D9%88%D9%84-%D8%A7%D9%85%D8%AA%D8%AD%D8%A7%D9%86-%D8%A7%D9%84%D8%AA%D8%B1%D9%85-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D8%A7%D9%84%D9%81%D8%B1%D9%82%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89%D8%B9%D8%A7%D9%85%D8%A9-%D9%86%D8%B8%D8%A7%D9%85-%D8%B3%D8%A7%D8%B9%D8%A7%D8%AA2025.pdf',
+  ],
+  [
+    'https://fa-hiss.edu.eg/wp-content/uploads/2025/05/%D8%AC%D8%AF%D9%88%D9%84-%D8%A7%D9%85%D8%AA%D8%AD%D8%A7%D9%86-%D8%A7%D9%84%D8%AA%D8%B1%D9%85-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%81%D8%B1%D9%82%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%D8%A9%D8%B3%D9%8A%D8%A7%D8%AD%D8%A9-%D9%88%D8%B6%D9%8A%D8%A7%D9%81%D8%A9-%D9%88%D8%A7%D8%B1%D8%B4%D8%A7%D8%AF-%D8%AD%D8%AF%D9%8A%D8%AB%D8%AF%D9%88%D8%B1-%D9%8A%D9%86%D8%A7%D9%8A%D8%B1-2025.pdf',
+    'https://fa-hiss.edu.eg/wp-content/uploads/2025/05/%D8%AC%D8%AF%D9%88%D9%84-%D8%A7%D9%85%D8%AA%D8%AD%D8%A7%D9%86-%D8%A7%D9%84%D8%AA%D8%B1%D9%85-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%81%D8%B1%D9%82%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB%D8%A9%D8%B3%D9%8A%D8%A7%D8%AD%D8%A9-%D9%88%D8%B6%D9%8A%D8%A7%D9%81%D8%A9-%D9%88%D8%A7%D8%B1%D8%B4%D8%A7%D8%AF-%D8%AD%D8%AF%D9%8A%D8%AB%D8%AF%D9%88%D8%B1-%D9%8A%D9%86%D8%A7%D9%8A%D8%B1-2025.pdf',
+    'https://fa-hiss.edu.eg/wp-content/uploads/2025/05/%D8%AC%D8%AF%D9%88%D9%84-%D8%A7%D9%85%D8%AA%D8%AD%D8%A7%D9%86-%D8%A7%D9%84%D8%AA%D8%B1%D9%85-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%81%D8%B1%D9%82%D8%A9-%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9%D8%A9%D8%B3%D9%8A%D8%A7%D8%AD%D8%A9-%D9%88%D8%B6%D9%8A%D8%A7%D9%81%D8%A9-%D9%88%D8%A7%D8%B1%D8%B4%D8%A7%D8%AF-%D8%AD%D8%AF%D9%8A%D8%AB%D8%AF%D9%88%D8%B1-%D9%8A%D9%86%D8%A7%D9%8A%D8%B1-2025.pdf',
+  ],
+  [
+    'https://fa-hiss.edu.eg/wp-content/uploads/2025/05/%D8%AC%D8%AF%D9%88%D9%84-%D8%A7%D9%85%D8%AA%D8%AD%D8%A7%D9%86-%D8%A7%D9%84%D8%AA%D8%B1%D9%85-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%81%D8%B1%D9%82%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%D8%A9%D8%B3%D9%8A%D8%A7%D8%AD%D8%A9-%D9%88%D8%B6%D9%8A%D8%A7%D9%81%D8%A9-%D9%88%D8%A7%D8%B1%D8%B4%D8%A7%D8%AF-%D9%82%D8%AF%D9%8A%D9%85%D8%AF%D9%88%D8%B1-%D9%8A%D9%86%D8%A7%D9%8A%D8%B1-2025.pdf',
+    'https://fa-hiss.edu.eg/wp-content/uploads/2025/05/%D8%AC%D8%AF%D9%88%D9%84-%D8%A7%D9%85%D8%AA%D8%AD%D8%A7%D9%86-%D8%A7%D9%84%D8%AA%D8%B1%D9%85-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%81%D8%B1%D9%82%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB%D8%A9%D8%B3%D9%8A%D8%A7%D8%AD%D8%A9-%D9%88%D9%81%D9%86%D8%A7%D8%AF%D9%82-%D9%88%D8%A7%D8%B1%D8%B4%D8%A7%D8%AF-%D9%82%D8%AF%D9%8A%D9%85%D8%AF%D9%88%D8%B1-%D9%8A%D9%86%D8%A7%D9%8A%D8%B1-2025.pdf',
+    'https://fa-hiss.edu.eg/wp-content/uploads/2025/05/%D8%AC%D8%AF%D9%88%D9%84-%D8%A7%D9%85%D8%AA%D8%AD%D8%A7%D9%86-%D8%A7%D9%84%D8%AA%D8%B1%D9%85-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%81%D8%B1%D9%82%D8%A9-%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9%D8%A9%D8%B3%D9%8A%D8%A7%D8%AD%D8%A9-%D9%88%D9%81%D9%86%D8%A7%D8%AF%D9%82-%D9%88%D8%A7%D8%B1%D8%B4%D8%A7%D8%AF-%D9%82%D8%AF%D9%8A%D9%85%D8%AF%D9%88%D8%B1-%D9%8A%D9%86%D8%A7%D9%8A%D8%B1-2025.pdf',
+  ],
+  [
+    'https://fa-hiss.edu.eg/wp-content/uploads/2025/05/%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%AF%D9%84%D8%A9-%D8%AF%D9%88%D8%B1-%D9%8A%D9%86%D8%A7%D9%8A%D8%B1-2025.pdf',
+  ],
+];
+
+export const RESULT_GROUPS: readonly (readonly string[])[] = [
+  [
+    'https://drive.google.com/file/d/1h8K3rOLhYUbhV-rWcLJZbX4PRlO17pUl/view',
+    'https://drive.google.com/file/d/1vP-3Ml478pzUs28Jh3DfZpZA0UkBy30T/view',
+    'https://drive.google.com/file/d/1s_k2BJKHHBZ9EdoGK3fniz24ZSlXoDVE/view',
+  ],
+  [
+    'https://drive.google.com/file/d/1CJ4sEo-ZekvF6l4cwKom_npyKLm_kuR9/view',
+    'https://drive.google.com/file/d/1shzRF-XZeHgF64aLq1X3B9lX84h7bG3o/view',
+    'https://drive.google.com/file/d/1RFWTYPyDqXv64wr04BM2Mse2-JNJvxX3/view',
+    'https://drive.google.com/file/d/1drEej-gkQDFgQ21BpIBdzmU3rlWO47-w/view',
+    'https://drive.google.com/file/d/1ifCkeYBzI0Wz_pgr0dyXMKxo8K5xHLxA/view',
+    'https://drive.google.com/file/d/1XJ7h98OsBZahhd2pACZok1BDEqNhH5I-/view',
+    'https://drive.google.com/file/d/1ICGHZw-K-gW-uOU6qPhNbCpqv7qdy4z_/view',
+    'https://drive.google.com/file/d/181OS2k04KpqCSn9ThLmh3aPPDWsEIOeb/view',
+    'https://drive.google.com/file/d/1LsKc-N8H6mW7pVqEIBGcNScGAQOerVfb/view',
+  ],
+  [
+    'https://drive.google.com/file/d/1QkNJA7WWo1DeUU5DqnK_L_faSxzLpJ3s/view',
+  ],
+  [
+    'https://drive.google.com/file/d/1hfgrvl89NwZN9dnSiYsu591aZhgUq8pn/view',
+    'https://drive.google.com/file/d/1rOW6rFQd_a4zPBsc-LBKbMdNMpKHrAH0/view',
+  ],
+  [
+    'https://drive.google.com/file/d/1MBUMGdQu7Br01PWEtEHUigwGkN6i4B58/view',
+    'https://drive.google.com/file/d/1H0djSGjPu3ZlZekJlaKZOTGBro-_hYIq/view',
+    'https://drive.google.com/file/d/14I5PMa1gJGkvaCJ4EdAMWuYKkoBIaMjM/view',
+  ],
+  [
+    'https://fa-hiss.edu.eg/wp-content/uploads/2025/08/%D9%86%D8%AA%D9%8A%D8%AC%D8%A9-%D9%85%D8%B9%D9%87%D8%AF-%D8%A3%D9%88%D9%84-%D8%A3%D8%B9%D9%85%D8%A7%D9%84-%D9%85%D8%A7%D9%8A%D9%88-2025.pdf',
+    'https://fa-hiss.edu.eg/wp-content/uploads/2025/08/%D9%86%D8%AA%D9%8A%D8%AC%D8%A9-%D9%85%D8%B9%D9%87%D8%AF-%D8%AB%D8%A7%D9%86%D9%89-%D8%A3%D8%B9%D9%85%D8%A7%D9%84-%D9%85%D8%A7%D9%8A%D9%88-2025.pdf',
+    'https://fa-hiss.edu.eg/wp-content/uploads/2025/08/%D9%86%D8%AA%D9%8A%D8%AC%D8%A9-%D9%85%D8%B9%D9%87%D8%AF-%D8%AB%D8%A7%D9%84%D8%AB-%D8%A3%D8%B9%D9%85%D8%A7%D9%84-%D9%85%D8%A7%D9%8A%D9%88-2025-1.pdf',
+    'https://fa-hiss.edu.eg/wp-content/uploads/2025/08/%D9%86%D8%AA%D9%8A%D8%AC%D8%A9-%D9%85%D8%A7%D9%8A%D9%88-2025-%D8%B1%D8%A7%D8%A8%D8%B9%D8%A9-%D8%A7%D8%B9%D9%85%D8%A7%D9%84-%D9%85%D8%B9%D9%87%D8%AF.pdf',
+    'https://fa-hiss.edu.eg/wp-content/uploads/2025/08/%D8%A8%D9%83%D8%A7%D9%84%D9%88%D8%B1%D9%8A%D9%88%D8%B3-%D9%85%D8%A7%D9%8A%D9%882025-%D9%85%D8%B9%D9%87%D8%AF-%D8%A7%D8%B9%D9%85%D8%A7%D9%84-%D9%88%D8%B2%D8%A7%D8%B1%D8%A9.pdf',
+    'https://fa-hiss.edu.eg/wp-content/uploads/2025/05/%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%88%D9%89-%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9.pdf',
+  ],
+];

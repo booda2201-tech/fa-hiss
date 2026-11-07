@@ -41,7 +41,7 @@ import { SectionHeadingComponent } from '../../../shared/ui/section-heading/sect
               rel="noopener"
               class="group relative block aspect-[4/5] w-[78%] shrink-0 snap-start overflow-hidden rounded-4xl bg-brand-900 shadow-card ring-1 ring-black/5 transition duration-500 hover:-translate-y-2 hover:shadow-luxe sm:w-[21rem]"
             >
-              <img
+              <img decoding="async"
                 [src]="item.image"
                 [alt]="item.textKey ? '' : ('news.alt' | translate)"
                 width="640"

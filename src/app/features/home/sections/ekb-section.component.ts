@@ -13,7 +13,7 @@ import { IconComponent } from '../../../shared/ui/icon/icon.component';
   template: `
     <section class="relative overflow-hidden bg-brand-900 py-16 text-white lg:py-20">
       <div class="absolute inset-0 bg-brand-gradient" aria-hidden="true"></div>
-      <div class="pointer-events-none absolute -top-24 end-10 h-80 w-80 rounded-full bg-white/10 blur-[110px]" aria-hidden="true"></div>
+      <div class="orb pointer-events-none absolute -top-24 end-10 h-80 w-80 rounded-full bg-white/10 blur-[110px]" aria-hidden="true"></div>
       <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent-400/70 to-transparent" aria-hidden="true"></div>
 
       <div class="container relative">
@@ -34,7 +34,7 @@ import { IconComponent } from '../../../shared/ui/icon/icon.component';
 
           <div class="relative" data-aos="fade-end">
             <div class="absolute -bottom-4 -end-4 h-full w-full rounded-4xl border border-accent-400/60" aria-hidden="true"></div>
-            <img
+            <img decoding="async"
               [src]="image"
               alt=""
               width="640"
